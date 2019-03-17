@@ -1,0 +1,24 @@
+// Default
+.main-page-container {
+    .category-grid-item {
+        margin-top: 64px;
+    }
+}
+
+// Mobile
+@media only screen and (min-device-width: 300px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .main-page-container {
+        .category-grid-item {
+            width: 100%;
+        }
+    }
+}
+
+// Desktop
+@media only screen and (min-device-width: 569px) {
+    .main-page-container {
+        .category-grid-item {
+            width: 85%;
+        }
+    }
+}
