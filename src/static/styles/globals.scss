@@ -1,0 +1,29 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: $baseColor;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    @media only screen and (min-width: 768px){
+        max-width: 1128px;
+        padding: 0;
+    }
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}

@@ -1,0 +1,31 @@
+.topNavBar {
+    position: relative;
+    overflow: hidden;
+    padding: 16px 18px;
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: -1px;
+        &:last-child{
+            flex: 0;
+        }
+        &__link {
+            flex-grow: 1;
+            display: flex;
+            flex-basis: auto;
+            color: $baseColor;
+            text-decoration: none;
+            align-items: center;
+            text-align: center;
+            &:not(:last-child):after {
+                content: '';
+                border: .5px solid $baseColorLight;
+                height: 26px;
+                margin: auto;
+            }
+        }
+    }
+}

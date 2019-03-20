@@ -1,0 +1,195 @@
+
+.topsellerbtnContainer{
+    background-color: $darkGray;
+    color: $white;
+    padding: 0 16px;
+    position: relative;
+    max-width: 222px;
+    font-size: 13px;
+}
+.topsellerbtn{
+    display: flex;
+    width: 100%;
+    button {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    button, p {
+        color: $white;
+        padding: 0;
+        font-size: 13px;
+    }
+    p{
+        padding-left: 16px;
+        text-transform: capitalize;
+        font-weight: normal;
+    }
+    div[role=tooltip] {
+        width: 100%;
+        left: 0;
+        z-index: 10;
+        border-left: 0.5px solid $borderColor1;
+        border-right: 0.5px solid $borderColor1;
+        border-bottom: 0.5px solid $borderColor1;
+        top: 55px;
+        background-color: $white;
+        ul[role=menu] {
+            padding: 0;
+            li {
+                font-size: 13px;
+                &:hover {
+                    color: $white;
+                    background-color: $primaryColor !important;
+                }
+            }
+        }
+        
+    }
+}
+.catCon{
+    position: relative;
+    padding-left: 0;
+}
+.category{
+    &__menu{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+        &__item{
+            list-style-type: none;
+            padding: 17px 0;
+            p{
+            font-size: 13px;
+            }
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover {
+                .megamenu {
+                    top: 100%;
+                }
+            }
+        }
+        .megamenu{
+            position: absolute;
+            display: flex;
+            background-color: $white;
+            width: 100%;
+            padding: 24px 37px;
+            top: -9999px;
+            left: 0;
+            border: 0.5px solid $borderColor1;
+            border-top: none;
+            z-index: 1;
+            @media only screen and (max-width: 768px){
+                padding: 16px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+             }
+            >ul {
+                width: 25%;
+                padding: 0;
+                @media only screen and (max-width: 768px){
+                    width: 50%;
+                 }
+                h4 {
+                    font-size: 16px;
+                    line-height: 1.38;
+                    margin: 0 0 8px 0;
+                }
+                >li {
+                    display: block;
+                    list-style-type: none;
+                    p{
+                        font-size: 13px;
+                        text-transform: capitalize;
+                        line-height: 1.85;
+                        &:hover {
+                            color: $primaryColor;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+.bottomNavbar{
+    border-bottom: 2px solid $darkBorder;
+    @media only screen and (min-width: 768px){
+    max-height: 52px;
+    }
+}
+.sellerAction{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 52px;
+    overflow: hidden;
+    >div {
+        border-left: .5px solid $baseColorLight;
+        border-right: .5px solid $baseColorLight;
+        padding: 16px;
+        &:last-child {
+            border-left: none;
+        }
+    }
+}
+.topsellerbtnContainer{
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.appDrawer{
+    display: flex;
+    flex-direction: column;
+    max-width: 288px;
+    width: 288px;
+    .brandUser{
+        font-size: 13px;
+        padding: 16px 24px;
+        margin: 0;
+        font-weight: normal;
+        line-height: 1.38;
+        color:  $white;
+        text-transform: capitalize;
+        background-color: $primaryColor;
+    }
+    .brandTitle{
+        font-size: 13px;
+        padding: 16px 24px;
+        margin: 0;
+        font-weight: normal;
+        line-height: 1.38;
+        color:  $baseColor;
+        text-transform: capitalize;
+    }
+    ul {
+        border-top: 0.5px solid $borderColor1;
+        padding: 16px 24px;
+        margin: 0;
+        li {
+            list-style-type: none;
+            a{ 
+                text-decoration: none;
+                font-size: 13px;
+                color: $baseColor;
+                font-weight: normal;
+                display: block;
+                line-height: 1.38;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
