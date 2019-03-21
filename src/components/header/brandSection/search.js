@@ -1,19 +1,38 @@
 import React from 'react';
 import { Grid, InputBase } from '@material-ui/core';
+import { Field, reduxForm } from 'redux-form';
 import SearchIcon from '@material-ui/icons/Search';
-const Search = () => {
-    return (
-        <Grid item xs={12} lg={6}>
-        <div className="searchField">
-            <InputBase
-                className='searchField__input'
-                placeholder="Total 5,000 products are listed"
-            />
-            <div className="searchField__icon">
-                <SearchIcon />
-            </div>
-        </div>
-    </Grid>
-    )
+
+class Search extends React.Component {
+    renderInput(formProps) {
+        return <input className="searchField__input" onChange={formProps.input.onChange} value={formProps.input.value} placeholder="Total 5,000 products are listed" />;
+    }
+    onSubmit(formValues) {
+        console.log(formValues);
+    }
+    render() {
+        return (
+            <Grid item xs={12} lg={6}>
+                <div className="searchField">
+                    <form onSubmit={this.props.handleSubmit(this.onSubmit)}>
+                        <Field component={this.renderInput} name="search" />
+                        <div className="searchField__icon">
+                            <button type="submit"><SearchIcon /></button>
+                        </div>
+                    </form>
+                </div>
+            </Grid>
+        );
+    }
 }
-export default Search;
+const validate = (formValues) => {
+    const errors = {};
+    if (!formValues.search) {
+        errors.search = 'Please enter value to search'
+    }
+    return errors;
+}
+export default reduxForm({
+    form: 'searchSeller',
+    validate
+})(Search);

@@ -41,10 +41,11 @@
     background-color: $footerColor;
     padding: 24px 0;
     font-size: 12px;
-    line-height: 1.67;
+    line-height: 1;
     color: $footerContent1;
-    p:last-child{
+    .footerContentLast1{
         color: #9b9b9b;
+        padding-top: 12px;
     }
 }
 .footerCopyRight{
