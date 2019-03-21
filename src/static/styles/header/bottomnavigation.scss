@@ -52,6 +52,9 @@
     padding-left: 0;
 }
 .category{
+    @media only screen and (max-width: 768px){
+        padding-left: 15px;
+    }
     &__menu{
         display: flex;
         padding: 0;

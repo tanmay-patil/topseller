@@ -30,7 +30,20 @@
 .searchField{
     display: flex;
     border: 1px solid $primaryColor;
-    padding-left: 24px;
+    form {
+        display: flex;
+        width: 100%;
+        input {
+            padding-left: 20px;
+        }
+        button {
+            background: none;
+            color: $white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    }
     &__input {
         width: 100%;
         padding: 0;
