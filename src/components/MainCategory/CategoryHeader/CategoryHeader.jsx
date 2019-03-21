@@ -4,19 +4,43 @@ import Grid from '@material-ui/core/Grid';
 
 export default class CategoryHeader extends Component {
     render() {
+        const {
+            isFirstHeaderTextDark,
+            firstHeaderText,
+            secondHeaderText
+        } = this.props;
+
+        const firstHeaderTextClass = isFirstHeaderTextDark
+            ? 'dark-header'
+            : 'light-header';
+        const secondHeaderTextClass = isFirstHeaderTextDark
+            ? 'light-header'
+            : 'dark-header';
+
         return (
-            <Grid
-                container
-                lg={10}
-                sm={10}
-                className="category-header-component"
-                item
-                // justify="center"
-            >
-                <Grid sm={10} item>
-                    Header
+            <div className="category-header-container">
+                <Grid
+                    className="category-header-grid container catCon"
+                    container
+                    direction="row"
+                    justify="flex-start"
+                    alignItems="flex-start"
+                    spacing={0}
+                >
+                    <span className="header-text">
+                        <span className={firstHeaderTextClass}>
+                            {firstHeaderText}
+                        </span>
+                        <span className={secondHeaderTextClass}>
+                            {secondHeaderText}
+                        </span>
+                    </span>
+
+                    <div className="grow" />
+
+                    <span className="view-more-link">View More +</span>
                 </Grid>
-            </Grid>
+            </div>
         );
     }
 }

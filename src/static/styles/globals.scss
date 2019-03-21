@@ -1,6 +1,8 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
-  }
+}
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
@@ -15,7 +17,7 @@ body {
     padding: 0;
 }
 .container {
-    @media only screen and (min-width: 768px){
+    @media only screen and (min-width: 768px) {
         max-width: 1128px;
         padding: 0;
     }
