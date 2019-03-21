@@ -1,29 +1,25 @@
 import React, { Component } from 'react';
 import './MainCategory.scss';
-import CategoryHeader from './CategoryHeader/CategoryHeader';
-import PlainCardList from './ProductCardList/PlainCardList/PlainCardList';
-import SliderCardList from './ProductCardList/SliderCardList/SliderCardList';
-import CardList from './Prototype/CardList/CardList';
+import CategoryList from './CategoryList/CategoryList';
+import Grid from '@material-ui/core/Grid';
+// Main category should consist of category header and category list
 
 export default class MainCategory extends Component {
+    state = {
+        spacing: 16
+    };
     render() {
-        const {
-            isFirstHeaderTextDark,
-            firstHeaderText,
-            secondHeaderText,
-            showRankingIndex
-        } = this.props;
-
+        const { spacing } = this.state;
         return (
-            <div className="category-container">
-                <CategoryHeader
-                    firstHeaderText={firstHeaderText}
-                    secondHeaderText={secondHeaderText}
-                    isFirstHeaderTextDark={isFirstHeaderTextDark}
-                />
-                <PlainCardList showRankingIndex={showRankingIndex} />
-                <SliderCardList />
-            </div>
+            <Grid
+                item
+                className="main-category-container"
+                container
+                justify="center"
+                spacing={spacing}
+            >
+                <CategoryList />
+            </Grid>
         );
     }
 }

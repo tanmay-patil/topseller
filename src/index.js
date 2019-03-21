@@ -11,7 +11,7 @@ import './index.scss';
 import './static/styles/styles.scss';
 import Header from './components/header';
 import Footer from './components/footer';
-import Main from './pages/Main/Main';
+import MainPage from './pages/MainPage/MainPage';
 
 ReactDOM.render(
     <Provider store={Store}>
@@ -19,7 +19,7 @@ ReactDOM.render(
             <>
                 <Header />
                 <Switch>
-                    <Route exact path="/" component={Main} />
+                    <Route exact path="/" component={MainPage} />
                     {/* <Route exact path="/main/" component={Main} /> */}
                 </Switch>
                 <Footer />
