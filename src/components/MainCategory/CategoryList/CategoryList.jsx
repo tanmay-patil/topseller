@@ -76,6 +76,13 @@ const DUMMY_PRODUCT_LIST = [
         imgUrl: 'https://picsum.photos/400/400/?image=99',
         name: 'Sample Product Name First 1 - Sample',
         price: '1230'
+    },
+    {
+        id: 'T12345',
+        ranking: '',
+        imgUrl: 'https://picsum.photos/400/400/?image=99',
+        name: 'Sample Product Name First 1 - Sample',
+        price: '1230'
     }
 ];
 export default class CategoryList extends Component {
