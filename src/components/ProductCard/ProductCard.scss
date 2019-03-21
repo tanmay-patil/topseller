@@ -38,12 +38,14 @@
         padding: 12px;
 
         .first-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             .card-label {
-                width: 44px;
-                height: 21px;
+                // width: 44px;
+                // height: 21px;
                 border-radius: 2px;
 
-                font-size: 12px;
                 font-weight: bold;
                 font-style: normal;
                 font-stretch: normal;
@@ -53,12 +55,11 @@
                 padding-left: 10px;
                 padding-right: 10px;
                 padding-top: 5px;
-                padding-bottom: 5px;
+                padding-bottom: 3px;
             }
 
             .product-id-container {
-                float: right;
-                font-size: 13px;
+                // float: right;
                 font-weight: normal;
                 font-style: normal;
                 font-stretch: normal;
@@ -125,9 +126,14 @@
 }
 
 // Mobile
-@media only screen and (min-device-width: 300px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-device-width: 300px) and (max-device-width: 568px) {
+    .slider-card {
+        width: 174px !important;
+    }
+
     .product-card {
         width: 44%;
+        // width: 174px;
         height: 276px;
 
         .product-image-container {
@@ -138,6 +144,17 @@
         .product-cost-container {
             font-size: 16px;
             font-size: 13px;
+        }
+        .product-id-container {
+            font-size: 11px;
+        }
+
+        .product-details-container {
+            .first-row {
+                .card-label {
+                    font-size: 10px;
+                }
+            }
         }
 
         .second-row,
@@ -154,8 +171,20 @@
         height: 352px;
         // width: 17%;
 
+        .product-id-container {
+            font-size: 13px;
+        }
+
         .product-image-container {
             height: 213px;
+        }
+
+        .product-details-container {
+            .first-row {
+                .card-label {
+                    font-size: 12px;
+                }
+            }
         }
 
         .product-name-container,

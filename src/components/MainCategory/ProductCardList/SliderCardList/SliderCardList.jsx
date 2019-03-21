@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './PlainCardList.scss';
+import './SliderCardList.scss';
 import ProductCard from '../../../ProductCard/ProductCard';
-import MediaQuery from 'react-responsive';
+import LeftArrowSVG from '../../../../icons/svg/LeftArrowSVG';
+import RightArrowSVG from '../../../../icons/svg/RightArrowSVG';
 
 const DUMMY_CARD_LIST = [
     {
@@ -69,23 +70,33 @@ const DUMMY_CARD_LIST = [
     }
 ];
 
-export default class PlainCardList extends Component {
+export default class SliderCardList extends Component {
     render() {
-        const { showRankingIndex } = this.props;
+        const {} = this.props;
 
         return (
-            <div className="plain-card-list-container">
-                {DUMMY_CARD_LIST.map((product, index) => {
-                    return (
-                        <ProductCard
-                            isSliderCard={false}
-                            showRankingIndex={showRankingIndex}
-                            index={index + 1}
-                            product={product}
-                            key={index}
-                        />
-                    );
-                })}
+            <div className="slider-card-list-container">
+                <div className="prev">
+                    <LeftArrowSVG />
+                </div>
+
+                <div className="card-list">
+                    {DUMMY_CARD_LIST.map((product, index) => {
+                        return (
+                            <ProductCard
+                                showRankingIndex={false}
+                                index={index + 1}
+                                product={product}
+                                key={index}
+                                isSliderCard={true}
+                            />
+                        );
+                    })}
+                </div>
+
+                <div className="next">
+                    <RightArrowSVG />
+                </div>
             </div>
         );
     }

@@ -19,8 +19,8 @@ ReactDOM.render(
             <>
                 <Header />
                 <Switch>
-                    <Route exact path="/" component={App} />
-                    <Route exact path="/main/" component={Main} />
+                    <Route exact path="/" component={Main} />
+                    {/* <Route exact path="/main/" component={Main} /> */}
                 </Switch>
                 <Footer />
             </>

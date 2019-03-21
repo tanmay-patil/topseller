@@ -68,26 +68,16 @@ const ProductCardComponent = props => {
 
 export default class ProductCard extends Component {
     render() {
-        const { product, index, showRankingIndex } = this.props;
+        const { product, index, showRankingIndex, isSliderCard } = this.props;
+
+        let currentClass = 'product-card';
+        currentClass += isSliderCard ? ' slider-card' : '';
 
         return (
             <span>
-                {/* <Mobile>
-                    <ProductCardComponent
-                        product={product}
-                        currentClass="mobile-product-card"
-                        index={index}
-                    />
-                </Mobile>
-                <Default>
-                    <ProductCardComponent
-                        product={product}
-                        currentClass="desktop-product-card"
-                    />
-                </Default> */}
                 <ProductCardComponent
                     product={product}
-                    currentClass="product-card"
+                    currentClass={currentClass}
                     index={index}
                     showRankingIndex={showRankingIndex}
                 />
