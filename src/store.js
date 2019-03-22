@@ -4,22 +4,35 @@ import { createBrowserHistory } from 'history';
 import thunk from 'redux-thunk';
 import { routerMiddleware } from 'connected-react-router';
 import createRootReducers from './reducers';
+import { composeWithDevTools } from 'redux-devtools-extension/logOnlyInProduction';
 
 export const history = createBrowserHistory();
 const middlewares = [thunk, routerMiddleware(history)];
 
-const composeEnhancers =
-    typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-        ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
-              // Specify extension’s options like name, actionsBlacklist, actionsCreators, serialize...
-          })
-        : compose;
+// const composeEnhancers =
+//     typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+//         ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+//               // Specify extension’s options like name, actionsBlacklist, actionsCreators, serialize...
+//           })
+//         : compose;
 
-const enhancer = composeEnhancers(
-    applyMiddleware(...middlewares)
-    // other store enhancers if any
+// const enhancer = composeEnhancers(
+//     applyMiddleware(...middlewares)
+//     // other store enhancers if any
+// );
+
+const composeEnhancers = composeWithDevTools({
+    // options like actionSanitizer, stateSanitizer
+});
+const store = createStore(
+    createRootReducers(history),
+    /* preloadedState, */ composeEnhancers(
+        applyMiddleware(...middlewares)
+        // other store enhancers if any
+    )
 );
-const store = createStore(createRootReducers(history), enhancer);
+
+// const store = createStore(createRootReducers(history), enhancer);
 
 // const store = createStore(
 //     createRootReducers(history),
