@@ -1,0 +1,32 @@
+.blank-category {
+    justify-content: space-around;
+
+    .blank-card-container {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .blank-card {
+        margin-top: 16px;
+        border: solid 1px #d2d2d2;
+        background-color: #d9d9d9;
+        flex-shrink: 0;
+    }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+    .blank-card {
+        width: 174px;
+        height: 98px;
+    }
+}
+
+// Desktop
+@media only screen and (min-width: 600px) {
+    .blank-card {
+        width: 270px;
+        height: 152px;
+    }
+}

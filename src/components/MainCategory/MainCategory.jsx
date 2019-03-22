@@ -109,7 +109,8 @@ export default class MainCategory extends Component {
             listType,
             firstHeaderText,
             secondHeaderText,
-            isFirstHeaderTextDark
+            isFirstHeaderTextDark,
+            shouldDisplayRanking
         } = this.props;
 
         this.sliderListRef = React.createRef();
@@ -129,7 +130,10 @@ export default class MainCategory extends Component {
                         isFirstHeaderTextDark={isFirstHeaderTextDark}
                     />
                     {listType === 'plain' ? (
-                        <PlainList products={DUMMY_PRODUCT_LIST} />
+                        <PlainList
+                            shouldDisplayRanking={shouldDisplayRanking}
+                            products={DUMMY_PRODUCT_LIST}
+                        />
                     ) : null}
 
                     {listType === 'slider' ? (

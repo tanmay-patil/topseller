@@ -5,7 +5,7 @@ import './PlainList.scss';
 
 export default class PlainList extends Component {
     render() {
-        const { products } = this.props;
+        const { products, shouldDisplayRanking } = this.props;
 
         return (
             <Grid
@@ -19,7 +19,11 @@ export default class PlainList extends Component {
             >
                 {products.map((product, i) => (
                     <Grid key={i} item>
-                        <ProductCard index={i + 1} product={product} />
+                        <ProductCard
+                            shouldDisplayRanking={shouldDisplayRanking}
+                            index={i + 1}
+                            product={product}
+                        />
                     </Grid>
                 ))}
             </Grid>
