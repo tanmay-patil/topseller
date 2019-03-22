@@ -5,6 +5,11 @@
 
     .product-image-container {
         background-color: #d9d9d9;
+
+        img {
+            max-height: 100%;
+            object-fit: cover;
+        }
     }
 
     .product-rank-container {

@@ -1,4 +1,6 @@
 .image-carousel-container {
+    @import '~bootstrap/scss/bootstrap';
+
     display: flex;
     justify-content: center;
     .image-carousel {

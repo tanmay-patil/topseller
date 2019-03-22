@@ -21,7 +21,12 @@ export default class BlankCategory extends Component {
                     md={6}
                     lg={3}
                 >
-                    <Paper className="blank-card" />
+                    <div className="blank-card">
+                        <img
+                            src="https://source.unsplash.com/500x500/?jeans"
+                            alt=""
+                        />
+                    </div>
                 </Grid>
                 <Grid
                     className="blank-card-container"
@@ -30,7 +35,12 @@ export default class BlankCategory extends Component {
                     md={6}
                     lg={3}
                 >
-                    <Paper className="blank-card" />
+                    <div className="blank-card">
+                        <img
+                            src="https://source.unsplash.com/500x500/?shirt"
+                            alt=""
+                        />
+                    </div>
                 </Grid>
                 <Grid
                     className="blank-card-container"
@@ -39,7 +49,12 @@ export default class BlankCategory extends Component {
                     md={6}
                     lg={3}
                 >
-                    <Paper className="blank-card" />
+                    <div className="blank-card">
+                        <img
+                            src="https://source.unsplash.com/500x500/?shoes"
+                            alt=""
+                        />
+                    </div>
                 </Grid>
                 <Grid
                     className="blank-card-container"
@@ -48,7 +63,12 @@ export default class BlankCategory extends Component {
                     md={6}
                     lg={3}
                 >
-                    <Paper className="blank-card" />
+                    <div className="blank-card">
+                        <img
+                            src="https://source.unsplash.com/500x500/?cap"
+                            alt=""
+                        />
+                    </div>
                 </Grid>
             </Grid>
         );

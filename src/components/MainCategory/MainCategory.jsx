@@ -84,7 +84,7 @@ const DUMMY_PRODUCT_LIST = [
     {
         id: 'T12345',
         ranking: '',
-        imgUrl: 'https://picsum.photos/400/400/?image=99',
+        imgUrl: 'https://picsum.photos/400/400/?image=100',
         name: 'Sample Product Name First 1 - Sample',
         price: '1230'
     }

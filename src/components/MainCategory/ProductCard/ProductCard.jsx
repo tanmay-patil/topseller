@@ -41,6 +41,7 @@ export default class ProductCard extends Component {
                     {shouldDisplayRanking ? (
                         <span className="product-rank-container">{index}</span>
                     ) : null}
+                    <img src={product.imgUrl} alt="" />
                 </div>
                 <div className="product-details">
                     <div className="first-row">
