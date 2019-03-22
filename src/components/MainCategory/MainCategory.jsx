@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './MainCategory.scss';
-import CategoryList from './CategoryList/CategoryList';
 import Grid from '@material-ui/core/Grid';
 import CategoryHeader from './CategoryHeader/CategoryHeader';
 import PlainList from '../MainCategory/PlainList/PlainList';
