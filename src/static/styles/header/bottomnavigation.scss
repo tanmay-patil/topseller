@@ -74,9 +74,10 @@
             &:last-child {
                 margin-right: 0;
             }
-            &:hover {
+            &:hover, &:focus {
                 .megamenu {
                     top: 100%;
+                    z-index: 3;
                 }
             }
         }
@@ -128,6 +129,7 @@
 }
 .bottomNavbar {
     border-bottom: 2px solid $darkBorder;
+    position: relative;
     @media only screen and (min-width: 768px) {
         max-height: 52px;
     }
