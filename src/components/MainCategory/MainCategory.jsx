@@ -96,6 +96,13 @@ export default class MainCategory extends Component {
     state = {
         spacing: 16
     };
+
+    handleScroll = direction => {
+        direction === 'left'
+            ? this.sliderListRef.current.handleScrollLeft()
+            : this.sliderListRef.current.handleScrollRight();
+    };
+
     render() {
         const { spacing } = this.state;
         const {
@@ -104,6 +111,9 @@ export default class MainCategory extends Component {
             secondHeaderText,
             isFirstHeaderTextDark
         } = this.props;
+
+        this.sliderListRef = React.createRef();
+
         return (
             <Grid
                 item
@@ -123,17 +133,26 @@ export default class MainCategory extends Component {
                     ) : null}
 
                     {listType === 'slider' ? (
-                        <div className="left-arrow-container">
+                        <div
+                            onClick={() => this.handleScroll('left')}
+                            className="left-arrow-container"
+                        >
                             <LeftArrowSVG />
                         </div>
                     ) : null}
 
                     {listType === 'slider' ? (
-                        <SliderList products={DUMMY_PRODUCT_LIST} />
+                        <SliderList
+                            ref={this.sliderListRef}
+                            products={DUMMY_PRODUCT_LIST}
+                        />
                     ) : null}
 
                     {listType === 'slider' ? (
-                        <div className="right-arrow-container">
+                        <div
+                            onClick={() => this.handleScroll('right')}
+                            className="right-arrow-container"
+                        >
                             <RightArrowSVG />
                         </div>
                     ) : null}

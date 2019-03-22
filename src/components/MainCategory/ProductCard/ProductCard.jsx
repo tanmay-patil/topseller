@@ -34,7 +34,7 @@ export default class ProductCard extends Component {
                 productLabel = '';
                 break;
         }
-        console.log(index);
+
         return (
             <Paper className="product-card-container">
                 <div className="product-image-container">
