@@ -118,21 +118,21 @@ export default class MainCategory extends Component {
                         secondHeaderText={secondHeaderText}
                         isFirstHeaderTextDark={isFirstHeaderTextDark}
                     />
-                    {listType == 'plain' ? (
+                    {listType === 'plain' ? (
                         <PlainList products={DUMMY_PRODUCT_LIST} />
                     ) : null}
 
-                    {listType == 'slider' ? (
+                    {listType === 'slider' ? (
                         <div className="left-arrow-container">
                             <LeftArrowSVG />
                         </div>
                     ) : null}
 
-                    {listType == 'slider' ? (
+                    {listType === 'slider' ? (
                         <SliderList products={DUMMY_PRODUCT_LIST} />
                     ) : null}
 
-                    {listType == 'slider' ? (
+                    {listType === 'slider' ? (
                         <div className="right-arrow-container">
                             <RightArrowSVG />
                         </div>

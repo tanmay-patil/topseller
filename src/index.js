@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import { Provider } from 'react-redux';
 import Store, { history } from './store';
-import App from './App';
+// import App from './App';
 import 'typeface-open-sans';
 import * as serviceWorker from './serviceWorker';
 import './index.scss';
