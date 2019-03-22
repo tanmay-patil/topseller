@@ -1,0 +1,40 @@
+.main-category-container {
+    position: relative;
+
+    .left-arrow-container,
+    .right-arrow-container {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+        width: 32px;
+        height: 32px;
+        border: solid 2px #d2d2d2;
+        background-color: #ffffff;
+        border-radius: 50%;
+        z-index: 1;
+
+        svg {
+            fill: #d2d2d2;
+        }
+    }
+
+    .left-arrow-container {
+        margin-right: -30px;
+    }
+
+    .right-arrow-container {
+        margin-left: -31px;
+    }
+}
+
+// Tablet
+@media only screen and (max-width: 1160px) {
+    .main-category-container {
+        .left-arrow-container,
+        .right-arrow-container {
+            display: none;
+        }
+    }
+}

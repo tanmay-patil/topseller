@@ -22,6 +22,10 @@
         text-align: left;
         color: #424242;
 
+        .first-header-text {
+            margin-right: 5px;
+        }
+
         .light-header {
             font-weight: 300;
         }
@@ -64,7 +68,6 @@
 }
 
 // Desktop
-// Mobile
 @media only screen and (min-width: 600px) {
     .category-header-container {
         margin-top: 64px;

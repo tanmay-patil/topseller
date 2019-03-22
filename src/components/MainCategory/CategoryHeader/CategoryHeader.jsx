@@ -28,10 +28,18 @@ export default class CategoryHeader extends Component {
                     spacing={0}
                 >
                     <span className="header-text">
-                        <span className={firstHeaderTextClass}>
+                        <span
+                            className={
+                                'first-header-text ' + firstHeaderTextClass
+                            }
+                        >
                             {firstHeaderText}
                         </span>
-                        <span className={secondHeaderTextClass}>
+                        <span
+                            className={
+                                'second-header-text ' + secondHeaderTextClass
+                            }
+                        >
                             {secondHeaderText}
                         </span>
                     </span>

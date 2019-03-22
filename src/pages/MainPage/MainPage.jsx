@@ -9,7 +9,24 @@ export default class MainPage extends Component {
         return (
             <Grid item className="main-page-container" container spacing={24}>
                 <Grid item xs={12}>
-                    <MainCategory />
+                    <MainCategory
+                        firstHeaderText="Top"
+                        secondHeaderText="100"
+                        isFirstHeaderTextDark={false}
+                        listType="plain"
+                    />
+                    <MainCategory
+                        firstHeaderText="TopSeller"
+                        secondHeaderText="Choice"
+                        isFirstHeaderTextDark={false}
+                        listType="slider"
+                    />
+                    <MainCategory
+                        firstHeaderText="Bulk Order"
+                        secondHeaderText="Sales"
+                        isFirstHeaderTextDark={true}
+                        listType="plain"
+                    />
                 </Grid>
             </Grid>
         );

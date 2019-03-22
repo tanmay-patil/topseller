@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
-import ProductCard from '../../ProductCard/ProductCard';
+import ProductCard from '../ProductCard/ProductCard';
 import './PlainList.scss';
 
 export default class PlainList extends Component {
