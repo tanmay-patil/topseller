@@ -1,13 +1,28 @@
 import React, { Component } from 'react';
 import './CategoryHeader.scss';
 import Grid from '@material-ui/core/Grid';
+import { Mobile, Desktop } from '../../../services/ScreenSizeDefinitions';
+
+const Keywords = () => {
+    return (
+        <span className="keywords">
+            <span className="tag">#Diffuser</span>
+            <span className="tag">#Kbeauty</span>
+            <span className="tag">#Electronics</span>
+            <span className="tag">#Diffuser</span>
+            <span className="tag">#Kbeauty</span>
+            <span className="tag">#Electronics</span>
+        </span>
+    );
+};
 
 export default class CategoryHeader extends Component {
     render() {
         const {
             isFirstHeaderTextDark,
             firstHeaderText,
-            secondHeaderText
+            secondHeaderText,
+            showPopularKeywords
         } = this.props;
 
         const firstHeaderTextClass = isFirstHeaderTextDark
@@ -19,6 +34,15 @@ export default class CategoryHeader extends Component {
 
         return (
             <div className="category-header-container">
+                {showPopularKeywords ? (
+                    <Mobile>
+                        <div className="width-100  container catCon popular-keywords-container">
+                            <span className="label">Popular Keyword</span>
+                            <Keywords />
+                        </div>
+                    </Mobile>
+                ) : null}
+
                 <Grid
                     className="category-header-grid container catCon"
                     container
@@ -43,6 +67,15 @@ export default class CategoryHeader extends Component {
                             {secondHeaderText}
                         </span>
                     </span>
+
+                    {showPopularKeywords ? (
+                        <Desktop>
+                            <div className="width-600px margin-left-12 popular-keywords-container">
+                                <span className="label">Popular Keyword</span>
+                                <Keywords />
+                            </div>
+                        </Desktop>
+                    ) : null}
 
                     <div className="grow" />
 

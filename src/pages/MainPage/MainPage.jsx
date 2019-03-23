@@ -28,6 +28,14 @@ export default class MainPage extends Component {
                         isFirstHeaderTextDark={false}
                         listType="slider"
                         shouldDisplayRanking={false}
+                        showPopularKeywords={true}
+                    />
+                    <MainCategory
+                        firstHeaderText="Abroad"
+                        secondHeaderText="Direct Shipment"
+                        isFirstHeaderTextDark={false}
+                        listType="slider"
+                        shouldDisplayRanking={false}
                     />
                     <MainCategory
                         firstHeaderText="Bulk Order"
