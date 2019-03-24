@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './CategoryHeader.scss';
 import Grid from '@material-ui/core/Grid';
 import { Mobile, Desktop } from '../../../services/ScreenSizeDefinitions';
+import '../../../static/styles/resize.scss';
 
 const Keywords = () => {
     return (
@@ -33,7 +34,7 @@ export default class CategoryHeader extends Component {
             : 'dark-header';
 
         return (
-            <div className="category-header-container">
+            <div className="main-category-resize category-header-container">
                 {showPopularKeywords ? (
                     <Mobile>
                         <div className="width-100  container catCon popular-keywords-container">

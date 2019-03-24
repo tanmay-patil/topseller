@@ -26,7 +26,10 @@ export default class SliderList extends Component {
         this.handleScrollLeft();
 
         return (
-            <div ref={this.testRef} className="scrolling-wrapper-flexbox">
+            <div
+                ref={this.testRef}
+                className="main-category-resize scrolling-wrapper-flexbox"
+            >
                 {products.map((product, i) => (
                     <div key={i} className="slider-card">
                         <ProductCard index={i + 1} product={product} />

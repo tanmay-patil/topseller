@@ -1,0 +1,17 @@
+// Custom
+
+@media only screen and (min-width: 916px) and(max-width: 1145px) {
+    .main-category-resize {
+        width: 900px;
+    }
+}
+@media only screen and (min-width: 687px) and (max-width: 915px) {
+    .main-category-resize {
+        width: 680px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 685px) {
+    .main-category-resize {
+        width: 450px;
+    }
+}
