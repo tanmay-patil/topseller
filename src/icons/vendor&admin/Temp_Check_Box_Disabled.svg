@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Temp_Check_Box_Disabled" transform="translate(-553 -260.5)">
+    <g id="사각형_1980" data-name="사각형 1980" class="cls-1" transform="translate(553 260.5)">
+      <rect class="cls-2" width="14" height="14" rx="2"/>
+      <rect class="cls-3" x="0.5" y="0.5" width="13" height="13" rx="1.5"/>
+    </g>
+  </g>
+</svg>

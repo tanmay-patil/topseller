@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.604" height="23" viewBox="0 0 24.604 23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #424242;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Admin_Services" transform="translate(-295.5 -55.5)">
+    <circle id="layer2" class="cls-1" cx="0.393" cy="0.393" r="0.393" transform="translate(301.893 57.964)"/>
+    <circle id="layer2-2" data-name="layer2" class="cls-1" cx="0.393" cy="0.393" r="0.393" transform="translate(304.643 57.964)"/>
+    <circle id="layer2-3" data-name="layer2" class="cls-1" cx="0.393" cy="0.393" r="0.393" transform="translate(307.393 57.964)"/>
+    <path id="layer2-4" data-name="layer2" class="cls-1" d="M12,4H31.643V8.714H12ZM23,20.5h8.643V8.714M12,8.714V18.929" transform="translate(287.929 52)"/>
+    <path id="layer1" class="cls-1" d="M2,42H5.929v7.071H2Zm3.929,5.5c1.571,0,3.143,1.571,4.714,1.571H24.786c.786,0,3.3-3.143-7.857-3.143a14.558,14.558,0,0,1-5.5-.786" transform="translate(294 28.929)"/>
+    <path id="layer1-2" data-name="layer1" class="cls-1" d="M12,42.786c1.571,0,2.357-.786,4.714-.786s7.071.393,7.071,3.536v.393" transform="translate(287.929 28.929)"/>
+  </g>
+</svg>

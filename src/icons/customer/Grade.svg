@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="그룹_1783" data-name="그룹 1783" transform="translate(1093 13708)">
+    <rect id="사각형_2339" data-name="사각형 2339" width="130" height="130" transform="translate(-1093 -13708)" fill="none"/>
+    <g id="star-medal-3142_45b5b680-bf3b-4c49-aede-5f2a924731c1" transform="translate(-1065.973 -13685)">
+      <path id="layer3" d="M65.811,1H11V17.454H65.843Z" transform="translate(0.01)" fill="#64738f"/>
+      <path id="layer2" d="M60.363,26.712c2.67-2.67,5.485-5.485,5.485-10.97V13H11v2.742c0,5.485,2.793,8.3,5.466,10.97L34.585,44.837l3.826-7.753L42.365,45.1l.06-.056Z" transform="translate(0.01 4.454)" fill="#d82929"/>
+      <path id="layer1" d="M58.865,46.5,43.7,44.3,40.88,38.579l-3.955-8.015L33.1,38.317,30.147,44.3,14.986,46.5,25.956,57.2,23.367,72.3l13.558-7.128L50.485,72.3l-2.59-15.1Z" transform="translate(1.49 10.974)" fill="#fc6"/>
+      <path id="opacity" d="M42.519,72.028,28.96,79.156l2.589-15.1-7.831-7.634-7.252,1.053,10.97,10.694-2.589,15.1L38.4,76.142l13.56,7.128-1.183-6.9ZM20.6,1H11V20.2c0,5.485,2.793,8.3,5.466,10.97L34.585,49.291l2.294-4.651C32.6,38.941,20.6,22.92,20.6,21.568Z" transform="translate(0.01)" fill="#000064" opacity="0.15"/>
+      <path id="stroke" d="M42.427,49.5l17.946-18.33c2.67-2.67,5.485-5.485,5.485-10.97L65.821,1H10.973V20.2c0,5.485,2.812,8.3,5.485,10.97L34.621,49.331M10.973,17.457H65.821" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="stroke-2" data-name="stroke" d="M36.925,65.168,23.367,72.3l2.589-15.1L14.986,46.5l15.161-2.2,6.778-13.738L43.7,44.3l15.16,2.2L47.895,57.2l2.59,15.1-13.56-7.128Z" transform="translate(1.49 10.974)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

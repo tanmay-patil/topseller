@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="그룹_1779" data-name="그룹 1779" transform="translate(1810 13708)">
+    <rect id="사각형_2335" data-name="사각형 2335" width="130" height="130" transform="translate(-1810 -13708)" fill="none"/>
+    <g id="presentation-2683_ba753ae1-47de-43a7-8843-d83f99c3477d" transform="translate(-1782 -13678)">
+      <path id="layer2" d="M6,10H66.667V47.333H6Z" transform="translate(0.667 1.333)" fill="#ebebeb"/>
+      <path id="layer1" d="M6,2H66.667v9.333H6Z" transform="translate(0.667 0)" fill="#d82929"/>
+      <path id="opacity" d="M6,2h9.333V48.667H6Z" transform="translate(0.667 0)" fill="#000064" opacity="0.15"/>
+      <path id="stroke" d="M37,72V48.667m-18.667,21L37,48.667m18.667,21L37,48.667m-35,0H72m-65.333,0V2H67.333V48.667M6.667,11.333H67.333" transform="translate(0 0)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

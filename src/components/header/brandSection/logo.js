@@ -1,7 +1,8 @@
 import React from 'react';
+import Sogo from '../../../icons/topsellerLogo.png'
 const Logo = () => {
     return (
-       <img src="https://via.placeholder.com/161x57" />
+        <img width='161' height='57' src={Sogo} />
     )
 }
 export default Logo;

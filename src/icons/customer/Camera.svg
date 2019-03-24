@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="그룹_1785" data-name="그룹 1785" transform="translate(703 13708)">
+    <rect id="사각형_2341" data-name="사각형 2341" width="130" height="130" transform="translate(-703 -13708)" fill="none"/>
+    <g id="vintage-camera-5261_dd14bc69-bb55-43d2-b3c6-3a7efc3a3d2b" transform="translate(-679 -13680)">
+      <path id="layer5" d="M2,45H80.953V55.527H2Z" transform="translate(0 12.004)" fill="#ebebeb"/>
+      <path id="layer6" d="M2,27H80.953V50.686H2Z" transform="translate(0 6.318)" fill="#d82929"/>
+      <path id="layer5-2" data-name="layer5" d="M2,13H80.953V31.422H2Z" transform="translate(0 1.895)" fill="#ebebeb"/>
+      <circle id="layer2" cx="15.791" cy="15.791" r="15.791" transform="translate(25.686 28.054)" fill="#9b9b9b"/>
+      <path id="opacity" d="M37.112,52.749A15.791,15.791,0,0,1,23.69,28.8,15.791,15.791,0,1,0,45.27,50.381a15.659,15.659,0,0,1-8.159,2.369Z" transform="translate(4.365 6.886)" fill="#000064" opacity="0.2"/>
+      <circle id="layer3" cx="7.895" cy="7.895" r="7.895" transform="translate(33.581 35.95)" fill="#ebebeb"/>
+      <path id="layer4" d="M16.9,20.632a2.632,2.632,0,0,1-2.632,2.632H11.632a2.632,2.632,0,0,1,0-5.264h2.632A2.632,2.632,0,0,1,16.9,20.632Z" transform="translate(2.211 3.475)" fill="#fff432"/>
+      <circle id="layer3-2" data-name="layer3" cx="1.316" cy="1.316" r="1.316" transform="translate(69.11 24.107)" fill="#78d1f4"/>
+      <path id="layer2-2" data-name="layer2" d="M49,7H60.843v7.9H49Z" transform="translate(14.847)" fill="#ebebeb"/>
+      <circle id="layer1" cx="2.632" cy="2.632" r="2.632" transform="translate(40.161 39.897)" fill="#fff"/>
+      <path id="stroke" d="M63.847,14.9V7H75.69v7.9M2,14.9H80.953V67.531H2Z" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="stroke-2" data-name="stroke" cx="15.791" cy="15.791" r="15.791" transform="translate(25.686 28.054)" stroke-width="2" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+      <circle id="stroke-3" data-name="stroke" cx="7.895" cy="7.895" r="7.895" transform="translate(33.581 35.95)" stroke-width="2" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+      <path id="stroke-4" data-name="stroke" d="M2,29.843H29.37m23.818,0H80.953M32.792,53.529H2m48.161,0H80.953m-61.847-32.9a2.632,2.632,0,0,1-2.632,2.632H13.843a2.632,2.632,0,0,1,0-5.264h2.632A2.632,2.632,0,0,1,19.107,20.632Z" transform="translate(0 3.475)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="stroke-5" data-name="stroke" cx="1.316" cy="1.316" r="1.316" transform="translate(69.11 24.107)" stroke-width="2" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+    </g>
+  </g>
+</svg>

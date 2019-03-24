@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="그룹_2454" data-name="그룹 2454" transform="translate(11191 -4859)">
+    <g id="important-message-4974_c911e188-3f93-4ab2-a01e-058300fa3336" transform="translate(-11168 4889)">
+      <path id="layer2" d="M58.52,8H30.26a28.26,28.26,0,1,0,0,56.519h2.826v14.13l16.956-14.13H58.52A28.26,28.26,0,1,0,58.52,8Z" transform="translate(-2 -8)" fill="#ebebeb"/>
+      <path id="opacity" d="M64.171,53.522H35.912a28.26,28.26,0,0,1-26-39.422A28.4,28.4,0,0,0,5.25,20.458l-1.13,2.261v.424l-.848,2.119v.706l-.706,2.119A4.356,4.356,0,0,0,2.424,29.5c0,.565-.141.989-.141,1.413S2,32.751,2,33.74A28.26,28.26,0,0,0,30.26,62h2.826V76.13L50.042,62H61.911l1.837-.283h.706l2.4-.565H67l2.119-.848.706-.283,1.554-.706.706-.424,1.978-1.272.283-.283,1.554-1.13.706-.565,1.13-1.13.706-.565L80,52.251l.424-.565.989-1.413.565-.848.706-1.272.424-.848.989-2.119A28.118,28.118,0,0,1,64.171,53.522Z" transform="translate(-2 -5.481)" fill="#000064" opacity="0.14"/>
+      <path id="opacity-2" data-name="opacity" d="M50.3,29.065C67.258,34.717,66.834,28.076,65,23.7a24.868,24.868,0,0,0-3.956-5.511c-7.913-7.63-16.673-7.348-22.184-4.945S33.347,23.413,50.3,29.065Z" transform="translate(11.869 -6.457)" fill="#fff" opacity="0.4"/>
+      <path id="layer1" d="M36.068,39.441a2.826,2.826,0,0,1-2.826,2.826,3.109,3.109,0,0,1-2.826-2.826L29,18.247a3.956,3.956,0,0,1,4.239-4.239,3.815,3.815,0,0,1,4.239,4.239Z" transform="translate(9.147 -5.53)" fill="#d82929"/>
+      <ellipse id="layer1-2" data-name="layer1" cx="2.826" cy="2.826" rx="2.826" ry="2.826" transform="translate(39.564 42.389)" fill="#d82929"/>
+      <path id="stroke" d="M58.52,8H30.26a28.26,28.26,0,1,0,0,56.519h2.826v14.13l16.956-14.13H58.52A28.26,28.26,0,1,0,58.52,8Z" transform="translate(-2 -8)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="stroke-2" data-name="stroke" d="M36.068,39.441a2.826,2.826,0,0,1-2.826,2.826,3.109,3.109,0,0,1-2.826-2.826L29,18.247a3.956,3.956,0,0,1,4.239-4.239,3.815,3.815,0,0,1,4.239,4.239Z" transform="translate(9.147 -5.53)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <ellipse id="stroke-3" data-name="stroke" cx="2.826" cy="2.826" rx="2.826" ry="2.826" transform="translate(39.564 42.389)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <rect id="사각형_2369" data-name="사각형 2369" width="130" height="130" transform="translate(-11191 4859)" fill="none"/>
+  </g>
+</svg>

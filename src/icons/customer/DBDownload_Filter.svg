@@ -1,0 +1,12 @@
+<svg id="그룹_2464" data-name="그룹 2464" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="타원_82" data-name="타원 82" transform="translate(0)" fill="#ebebeb" stroke="#707070" stroke-width="1.5">
+    <circle cx="40" cy="40" r="40" stroke="none"/>
+    <circle cx="40" cy="40" r="39.25" fill="none"/>
+  </g>
+  <g id="Orion_filter-data_2_" data-name="Orion_filter-data (2)" transform="translate(16.132 23.704)">
+    <path id="layer1" d="M2,6H49.736L30.641,26.685V42.6l-9.547,4.774V26.685Z" transform="translate(-2 -6)" fill="#fff"/>
+    <path id="opacity" d="M34,26.685,53.094,6H46.729Z" transform="translate(-8.541 -6)" fill="#fff" opacity="0.4"/>
+    <path id="opacity-2" data-name="opacity" d="M24.277,45.78V26.685L8.365,6H2L21.094,26.685V47.371Z" transform="translate(-2 -6)" fill="#000064" opacity="0.14"/>
+    <path id="stroke" d="M2,6H49.736L30.641,26.685V42.6l-9.547,4.774V26.685Z" transform="translate(-2 -6)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

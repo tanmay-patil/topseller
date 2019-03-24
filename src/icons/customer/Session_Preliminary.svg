@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="그룹_2450" data-name="그룹 2450" transform="translate(-440 -460)">
+    <g id="그룹_574" data-name="그룹 574" transform="translate(461.372 482.826)">
+      <g id="Orion_store-sign" transform="translate(0)">
+        <rect id="layer2" width="87.257" height="52.354" rx="3" transform="translate(0 31.994)" fill="#d82929"/>
+        <path id="opacity" d="M84.894,25H6.363A4.363,4.363,0,0,0,2,29.363v4.363a4.363,4.363,0,0,1,4.363-4.363H84.894a4.363,4.363,0,0,1,4.363,4.363V29.363A4.363,4.363,0,0,0,84.894,25Z" transform="translate(-2 6.994)" fill="#fff" opacity="0.2"/>
+        <path id="layer1" d="M10,33H73.988V62.086H10Z" transform="translate(1.634 10.628)" fill="#e7ecf5"/>
+        <path id="opacity-2" data-name="opacity" d="M10,33v4.363H69.625V62.086h4.363V33Z" transform="translate(1.634 10.628)" opacity="0.2"/>
+        <path id="stroke" d="M8,34.849,42.9,3l34.9,31.994" transform="translate(0.726 -3)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <rect id="stroke-2" data-name="stroke" width="87.257" height="52.354" rx="3" transform="translate(0 31.994)" stroke-width="2" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path id="stroke-3" data-name="stroke" d="M10,33H73.988V62.086H10Z" transform="translate(1.634 10.628)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <text id="ABC" transform="translate(26.177 64.083)" fill="#2e4369" font-size="18" font-family="OpenSans, Open Sans"><tspan x="0" y="0">ABC</tspan></text>
+    </g>
+    <circle id="타원_77" data-name="타원 77" cx="65" cy="65" r="65" transform="translate(440 460)" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #424242;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Vendor_Payments_AD" data-name="Vendor_Payments&amp;AD" transform="translate(-226.5 -40)">
+    <rect id="사각형_1967" data-name="사각형 1967" class="cls-1" width="24" height="24" transform="translate(227 40)"/>
+    <path id="layer1" class="cls-2" d="M52,30.736V10h3.851V30.736" transform="translate(194.186 31.63)"/>
+    <path id="layer2" class="cls-2" d="M36,41.554V30h3.851V41.554" transform="translate(204.174 20.813)"/>
+    <path id="layer1-2" data-name="layer1" class="cls-2" d="M20,37.4V22h3.851V37.4" transform="translate(213.975 24.962)"/>
+    <path id="layer2-2" data-name="layer2" class="cls-2" d="M4,47.777V42H7.851v5.777" transform="translate(223.963 14.59)"/>
+    <path id="layer1-3" data-name="layer1" class="cls-2" d="M26,54H2" transform="translate(225 8.366)"/>
+  </g>
+</svg>

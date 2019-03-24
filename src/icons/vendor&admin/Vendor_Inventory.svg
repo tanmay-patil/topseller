@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #424242;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Vendor_Inventory" transform="translate(-130.5 -52.695)">
+    <rect id="사각형_1967" data-name="사각형 1967" class="cls-1" width="24" height="24" transform="translate(131 53.195)"/>
+    <g id="price-tag-2342_0687a069-97a6-4f37-806d-cf16803d9aa8" transform="translate(131 53.195)">
+      <path id="layer2" class="cls-2" d="M12.352,27,9.993,19.966,3,17.648,17.648,3l8.772.579L27,12.352Z" transform="translate(-3 -3)"/>
+      <circle id="layer2-2" data-name="layer2" class="cls-2" cx="1.711" cy="1.711" r="1.711" transform="translate(16.875 3.704)"/>
+      <path id="layer1" class="cls-2" d="M22.8,27.43l6.073-6.03m-3.635,8.468,3.592-3.635" transform="translate(-14.696 -13.919)"/>
+    </g>
+  </g>
+</svg>
