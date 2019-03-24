@@ -6,6 +6,7 @@ import PlainList from '../MainCategory/PlainList/PlainList';
 import SliderList from './SliderList/SliderList';
 import LeftArrowSVG from '../../icons/svg/LeftArrowSVG';
 import RightArrowSVG from '../../icons/svg/RightArrowSVG';
+import { PRODUCT_RANKING_LABEL } from '../../services/types';
 
 /**
  * Category List should consist two components
@@ -17,84 +18,25 @@ import RightArrowSVG from '../../icons/svg/RightArrowSVG';
  * 2. Slider List - horizontally scrolling
  */
 
-const DUMMY_PRODUCT_LIST = [
-    {
-        id: 'T12345',
-        ranking: 'top',
-        imgUrl: 'https://picsum.photos/400/400/?image=11',
-        name: 'Sample Product Name First 1 - Sample',
-        price: '1230'
-    },
-    {
-        id: 'T12345',
-        ranking: 'gold',
-        imgUrl: 'https://picsum.photos/400/400/?image=22',
-        name: 'Sample Product Name First 1 - Sample',
-        price: '1230'
-    },
-    {
-        id: 'T12345',
-        ranking: 'silver',
-        imgUrl: 'https://picsum.photos/400/400/?image=33',
-        name: 'Sample Product Name First 1 - Sample',
-        price: '1230'
-    },
-    {
-        id: 'T12345',
-        ranking: 'bronze',
-        imgUrl: 'https://picsum.photos/400/400/?image=44',
-        name: 'Sample Product Name First 1 - Sample',
-        price: '1230'
-    },
-    {
-        id: 'T12345',
-        ranking: 'top',
-        imgUrl: 'https://picsum.photos/400/400/?image=55',
-        name: 'Sample Product Name First 1 - Sample',
-        price: '1230'
-    },
-    {
-        id: 'T12345',
-        ranking: 'gold',
-        imgUrl: 'https://picsum.photos/400/400/?image=66',
-        name: 'Sample Product Name First 1 - Sample',
-        price: '1230'
-    },
-    {
-        id: 'T12345',
-        ranking: 'silver',
-        imgUrl: 'https://picsum.photos/400/400/?image=77',
-        name: 'Sample Product Name First 1 - Sample',
-        price: '1230'
-    },
-    {
-        id: 'T12345',
-        ranking: 'bronze',
-        imgUrl: 'https://picsum.photos/400/400/?image=88',
-        name: 'Sample Product Name First 1 - Sample',
-        price: '1230'
-    },
-    {
-        id: 'T12345',
-        ranking: '',
-        imgUrl: 'https://picsum.photos/400/400/?image=99',
-        name: 'Sample Product Name First 1 - Sample',
-        price: '1230'
-    },
-    {
-        id: 'T12345',
-        ranking: '',
-        imgUrl: 'https://picsum.photos/400/400/?image=100',
-        name: 'Sample Product Name First 1 - Sample',
-        price: '1230'
-    }
-];
-
 // Main category should consist of category header and category list
 
 export default class MainCategory extends Component {
     state = {
         spacing: 16
+    };
+
+    getDummyProductList = () => {
+        const arr = [];
+        for (let index = 0; index < 50; index++) {
+            arr.push({
+                id: 'T12345',
+                ranking: PRODUCT_RANKING_LABEL.TOP,
+                imgUrl: 'https://picsum.photos/400/400/?image=2' + index,
+                name: `Sample Product Name First ${index} - Sample`,
+                price: '1230'
+            });
+        }
+        return arr;
     };
 
     handleScroll = direction => {
@@ -115,6 +57,8 @@ export default class MainCategory extends Component {
         } = this.props;
 
         this.sliderListRef = React.createRef();
+
+        const DUMMY_PRODUCT_LIST = this.getDummyProductList();
 
         return (
             <Grid

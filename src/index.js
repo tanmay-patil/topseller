@@ -12,6 +12,7 @@ import './static/styles/styles.scss';
 import Header from './components/header';
 import Footer from './components/footer';
 import MainPage from './pages/MainPage/MainPage';
+import SpecialBanner from './pages/SpecialBanner/SpecialBanner';
 
 ReactDOM.render(
     <Provider store={Store}>
@@ -20,6 +21,7 @@ ReactDOM.render(
                 <Header />
                 <Switch>
                     <Route exact path="/" component={MainPage} />
+                    <Route exact path="/special" component={SpecialBanner} />
                     {/* <Route exact path="/main/" component={Main} /> */}
                 </Switch>
                 <Footer />

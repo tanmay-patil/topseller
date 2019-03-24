@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Paper from '@material-ui/core/Paper';
 import './ProductCard.scss';
 import RupeeIconSVG from '../../../icons/svg/RupeeIconSVG';
+import { PRODUCT_RANKING_LABEL } from '../../../services/types';
 
 export default class ProductCard extends Component {
     render() {
@@ -9,22 +10,22 @@ export default class ProductCard extends Component {
 
         let productLabel;
         switch (product.ranking) {
-            case 'top':
+            case PRODUCT_RANKING_LABEL.TOP:
                 productLabel = (
                     <span className="product-label red-label">TOP</span>
                 );
                 break;
-            case 'gold':
+            case PRODUCT_RANKING_LABEL.GOLD:
                 productLabel = (
                     <span className="product-label gold-label">GOLD</span>
                 );
                 break;
-            case 'silver':
+            case PRODUCT_RANKING_LABEL.SILVER:
                 productLabel = (
                     <span className="product-label silver-label">SILVER</span>
                 );
                 break;
-            case 'bronze':
+            case PRODUCT_RANKING_LABEL.BRONZE:
                 productLabel = (
                     <span className="product-label bronze-label">BRONZE</span>
                 );
