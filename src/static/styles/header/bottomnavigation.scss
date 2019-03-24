@@ -64,9 +64,16 @@
         align-items: center;
         &__item {
             list-style-type: none;
-            padding: 17px 0;
-            p {
+            a {
+                display: block;
+                text-decoration: none;
+                color: $baseColor;
+                padding: 17px 0;
                 font-size: 13px;
+                &:hover {
+                    color: $primaryColor;
+                }
+                
             }
             &:first-child {
                 margin-left: 0;
@@ -75,6 +82,9 @@
                 margin-right: 0;
             }
             &:hover, &:focus {
+                > a{
+                    color: $primaryColor;
+            }
                 .megamenu {
                     top: 100%;
                     z-index: 3;
@@ -89,8 +99,11 @@
             padding: 24px 37px;
             top: -9999px;
             left: 0;
+            flex-direction: row;
+            flex-grow: 1;
             border: 0.5px solid $borderColor1;
             border-top: none;
+            flex-wrap: wrap;
             z-index: 1;
             @media only screen and (max-width: 768px) {
                 padding: 16px;
@@ -102,8 +115,13 @@
             > ul {
                 width: 25%;
                 padding: 0;
+                flex-grow: 0;
+                max-height: 190px;
+                margin-bottom: 24px;
                 @media only screen and (max-width: 768px) {
                     width: 50%;
+                    margin-bottom: 13px;
+                    max-height: 100%;
                 }
                 h4 {
                     font-size: 16px;
@@ -113,10 +131,12 @@
                 > li {
                     display: block;
                     list-style-type: none;
-                    p {
+                    a {
                         font-size: 13px;
                         text-transform: capitalize;
                         line-height: 1.85;
+                        padding: 0;
+                        line-height:2;
                         &:hover {
                             color: $primaryColor;
                             text-decoration: underline;
