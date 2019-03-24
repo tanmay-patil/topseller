@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import ShoppingCart from '@material-ui/icons/ShoppingCart';
-import SupervisedUserCircle from '@material-ui/icons/SupervisedUserCircle';
+import UserProfileIcon from '../../../icons/vendor&admin/Vendor_Profile.svg';
 import MediaQuery from 'react-responsive';
 const Cart = () => {
     return (
@@ -12,7 +12,7 @@ const Cart = () => {
                         <ShoppingCart />
                     </div>
                     <div className="sellerAction__user">
-                        <SupervisedUserCircle />
+                        <img src={UserProfileIcon} />
                     </div>
                 </div>
             </Grid>
