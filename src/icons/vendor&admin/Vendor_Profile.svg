@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #424242;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Vendor_Profile" transform="translate(-83.499 -51.945)">
+    <path id="layer2" class="cls-1" d="M28.1,30.641a4.785,4.785,0,0,0-1.707-.689c-3.215-.608-3.215-1.661-3.215-2.31v-.405a6.024,6.024,0,0,0,1.667-2.877c.992,0,1.191-2.067,1.191-2.391s.04-1.54-.953-1.54c2.143-5.916-3.533-8.307-7.78-5.268-1.746,0-1.905,2.634-1.23,5.268-.992,0-.953,1.256-.953,1.54s.238,2.391,1.191,2.391a6.023,6.023,0,0,0,1.707,2.918v.405c0,.648,0,1.7-3.215,2.31a4.664,4.664,0,0,0-1.707.648" transform="translate(75.397 43.089)"/>
+    <circle id="layer1" class="cls-1" cx="12" cy="12" r="12" transform="translate(83.999 52.445)"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="그룹_2465" data-name="그룹 2465" transform="translate(-245.433 -1176.057)">
+    <g id="그룹_1410" data-name="그룹 1410" transform="translate(245.433 1176.057)">
+      <g id="타원_83" data-name="타원 83" transform="translate(0)" fill="#ebebeb" stroke="#707070" stroke-width="1.5">
+        <circle cx="40" cy="40" r="40" stroke="none"/>
+        <circle cx="40" cy="40" r="39.25" fill="none"/>
+      </g>
+      <g id="Orion_update" transform="translate(18.175 14.818)">
+        <path id="layer1" d="M29.053,41.837l14.484-15.45a2.518,2.518,0,0,0-3.674-3.445l-8.235,8.785V4.518a2.518,2.518,0,0,0-5.036,0V31.434l-8.184-9.275a2.519,2.519,0,1,0-3.777,3.332Z" transform="translate(-7.285 -2)" fill="#ebf5ff"/>
+        <path id="layer1-2" data-name="layer1" d="M47.131,40a2.518,2.518,0,0,0-2.518,2.518V53.431H11.036V42.518a2.518,2.518,0,0,0-5.036,0V55.949a2.518,2.518,0,0,0,2.518,2.518H47.131a2.518,2.518,0,0,0,2.518-2.518V42.518A2.518,2.518,0,0,0,47.131,40Z" transform="translate(-6 -8.102)" fill="#fff"/>
+        <path id="stroke" d="M29.053,41.837l14.484-15.45a2.518,2.518,0,0,0-3.674-3.445l-8.235,8.785V4.518a2.518,2.518,0,0,0-5.036,0V31.434l-8.184-9.275a2.519,2.519,0,1,0-3.777,3.332Z" transform="translate(-7.285 -2)" fill="#d82929" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="stroke-2" data-name="stroke" d="M47.131,40a2.518,2.518,0,0,0-2.518,2.518V53.431H11.036V42.518a2.518,2.518,0,0,0-5.036,0V55.949a2.518,2.518,0,0,0,2.518,2.518H47.131a2.518,2.518,0,0,0,2.518-2.518V42.518A2.518,2.518,0,0,0,47.131,40Z" transform="translate(-6 -8.102)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

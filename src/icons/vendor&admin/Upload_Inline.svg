@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12.74" viewBox="0 0 13 12.74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ed1b24;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Upload_Inline" transform="translate(-690.5 -3390.5)">
+    <path id="layer2" class="cls-1" d="M19.9,11.133V3M16,7.457,19.9,3l3.9,4.194" transform="translate(677.097 3388)"/>
+    <path id="layer1" class="cls-1" d="M8,46v4.194H20V46" transform="translate(683 3352.545)"/>
+  </g>
+</svg>

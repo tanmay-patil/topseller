@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24.059" viewBox="0 0 25 24.059">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #424242;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Vendor_Notice_CS" data-name="Vendor_Notice&amp;CS" transform="translate(-274.5 -40)">
+    <g id="그룹_915" data-name="그룹 915" transform="translate(275 40)">
+      <g id="그룹_912" data-name="그룹 912" transform="translate(0)">
+        <g id="그룹_910" data-name="그룹 910">
+          <rect id="사각형_1967" data-name="사각형 1967" class="cls-1" width="24" height="24"/>
+        </g>
+      </g>
+    </g>
+    <g id="urgent-message-4741_df091332-2b11-4517-bbb6-e8c92da95222" transform="translate(275 43.225)">
+      <path id="layer2" class="cls-2" d="M2,8V23.948H9.2v4.386L14,23.948H26V8Z" transform="translate(-2 -8)"/>
+      <path id="layer1" class="cls-2" d="M31.033,21.322a.815.815,0,0,1-.815.815.9.9,0,0,1-.815-.815L29,15.211a1.141,1.141,0,0,1,1.222-1.222,1.1,1.1,0,0,1,1.222,1.222Z" transform="translate(-18.218 -11.544)"/>
+      <circle id="layer1-2" data-name="layer1" class="cls-2" cx="0.815" cy="0.815" r="0.815" transform="translate(11.185 11.938)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61.999" height="71" viewBox="0 0 61.999 71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ed1b24;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="그룹_924" data-name="그룹 924" transform="translate(1 1)">
+    <path id="layer2" class="cls-1" d="M34.461,38.754,23.038,46.946l4.385-13.269L16,25.946H30.077L34.461,12.1l4.385,13.846H52.923L41.5,33.677l4.385,13.269L34.461,38.754Z" transform="translate(-4.462 -0.561)"/>
+    <path id="layer1" class="cls-1" d="M6,2.1H66V27.485A48.231,48.231,0,0,1,36,71.1,48.231,48.231,0,0,1,6,27.485Z" transform="translate(-6 -2.1)"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="그룹_1772" data-name="그룹 1772" transform="translate(3017 13708)">
+    <g id="그룹_1771" data-name="그룹 1771">
+      <rect id="사각형_2328" data-name="사각형 2328" width="130" height="130" transform="translate(-3017 -13708)" fill="none"/>
+      <g id="edit-document-4191_a57a3d30-ffb2-4508-9d7a-d9eb0da26c5a" transform="translate(-2982 -13679)">
+        <path id="layer4" d="M38.72,57.193l8.613-8.613V20.133H29.2V2H2V63.2H36.34l2.38-6.007Z" fill="#ebebeb"/>
+        <path id="layer3" d="M44.133,20.133,26,2V20.133Z" transform="translate(3.2)" fill="#fff"/>
+        <path id="opacity" d="M22,2V25.8H44.667V20.133H26.533V2Z" transform="translate(2.667)" fill="#000064" opacity="0.15"/>
+        <path id="layer2" d="M30,63.507l12.92-4.873L34.987,50.7Z" transform="translate(3.733 6.493)" fill="#efcaa8"/>
+        <path id="layer1" d="M57.86,30,34.4,53.46l7.933,7.933,23.573-23.46L57.86,30Z" transform="translate(4.32 3.733)" fill="#d82929"/>
+        <path id="opacity-2" data-name="opacity" d="M35.56,52.513,44.173,43.9V37.1L27.627,53.647,25.7,58.52h7.48l2.38-6.007Z" transform="translate(3.16 4.68)" fill="#000064" opacity="0.15"/>
+        <path id="stroke" d="M36.34,63.2H2V2H29.2L47.333,20.133V48.58" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="stroke-2" data-name="stroke" d="M26,2V20.133H44.133m14.847,13.6L35.52,57.193,30.533,70l12.92-4.873,23.573-23.46L58.98,33.733ZM35.52,57.193l7.933,7.933" transform="translate(3.2)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.848" height="24.848" viewBox="0 0 25.848 24.848">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #424242;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Vendor_Order_Shipping" data-name="Vendor_Order&amp;Shipping" transform="translate(-178.5 -42)">
+    <g id="그룹_912" data-name="그룹 912" transform="translate(179 42)">
+      <g id="그룹_910" data-name="그룹 910" transform="translate(0)">
+        <rect id="사각형_1967" data-name="사각형 1967" class="cls-1" width="24.848" height="24.848" transform="translate(0)"/>
+      </g>
+    </g>
+    <g id="truck-3179_78e97489-08a0-4cb7-9a7d-41246f79b267" transform="translate(179 46.134)">
+      <path id="layer2" class="cls-2" d="M20.265,31.425H9.726m18.122,0h-2.7m-4.37-2.9H18.423m0-9.662h5.1l1.885,3.865h1.671c.343,0,.771.1.771.676v5.121H24.635m.771-5.8H18.423m-13.066,5.8H3V15H18.423V28.527H9.212" transform="translate(-3 -15)"/>
+      <ellipse id="layer1" class="cls-2" cx="2.57" cy="2.571" rx="2.57" ry="2.571" transform="translate(1.714 12.776)"/>
+      <ellipse id="layer1-2" data-name="layer1" class="cls-2" cx="2.57" cy="2.571" rx="2.57" ry="2.571" transform="translate(17.136 12.776)"/>
+    </g>
+  </g>
+</svg>

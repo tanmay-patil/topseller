@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="그룹_1776" data-name="그룹 1776" transform="translate(2340 13708)">
+    <rect id="사각형_2332" data-name="사각형 2332" width="130" height="130" transform="translate(-2340 -13708)" fill="none"/>
+    <g id="megaphone-4923_e3619592-9495-48d5-b99a-cca98fa65336" transform="translate(-2312 -13677)">
+      <path id="layer2" d="M65.011,36.67a7,7,0,1,0,0-14ZM9,18a7,7,0,0,0-7,7v9.335a7,7,0,0,0,7,7H23V18Z" transform="translate(0 1.669)" fill="#d82929"/>
+      <path id="layer1" d="M27,19.669H20V43.006h7A58.81,58.81,0,0,1,62.007,54.675V8A64.178,64.178,0,0,1,27,19.669Z" transform="translate(3.004 0)" fill="#fff6e3"/>
+      <path id="opacity" d="M25.337,32.5H9a7,7,0,0,1-7-7v8.168a7,7,0,0,0,7,7H30A58.81,58.81,0,0,1,65.011,52.339V44.171A58.81,58.81,0,0,0,30,32.5ZM65.011,22V36a7,7,0,0,0,3.5-.933V22.933A7,7,0,0,0,65.011,22Z" transform="translate(0 2.336)" fill="#000064" opacity="0.14"/>
+      <path id="stroke" d="M20,41.337c0,7,0,16.336,11.669,21M20,18V41.337M62.007,36.67a7,7,0,1,0,0-14" transform="translate(3.004 1.669)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="stroke-2" data-name="stroke" d="M25.337,43.006H9a7,7,0,0,1-7-7V26.67a7,7,0,0,1,7-7H30A64.178,64.178,0,0,0,65.011,8V54.675A58.81,58.81,0,0,0,30,43.006Z" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

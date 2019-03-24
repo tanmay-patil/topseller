@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #767171;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Vendor_Dashboard" transform="translate(-47.385 -52.695)">
+    <circle id="layer2" class="cls-1" cx="12" cy="12" r="12" transform="translate(47.884 53.195)"/>
+    <path id="layer2-2" data-name="layer2" class="cls-1" d="M8,17.922h2.38M17.52,8v2.48m7.14,7.442h2.38m-4.363-4.961,1.587-1.654" transform="translate(42.365 47.676)"/>
+    <path id="layer1" class="cls-1" d="M15.076,15.638A.4.4,0,0,1,15,15.413a.413.413,0,0,1,.616-.361l7.751,4.887A2.48,2.48,0,1,1,20,23.447Z" transform="translate(37.976 43.287)"/>
+  </g>
+</svg>

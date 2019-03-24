@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="그룹_1761" data-name="그룹 1761" transform="translate(4783 13708)">
+    <rect id="사각형_2318" data-name="사각형 2318" width="130" height="130" transform="translate(-4783 -13708)" fill="none"/>
+    <g id="browser-window-2017_4faa7be6-5806-43b0-a01a-f83e8394f3d9" transform="translate(-4757 -13681)">
+      <path id="layer3" d="M2,20H77V65H2Z" transform="translate(0 3)" fill="#fff"/>
+      <path id="layer2" d="M2,8H77V23H2Z" fill="#a6b1c9"/>
+      <circle id="layer1" cx="1.25" cy="1.25" r="1.25" transform="translate(8.25 14.25)" fill="#f27e7c"/>
+      <circle id="layer1-2" data-name="layer1" cx="1.25" cy="1.25" r="1.25" transform="translate(17 14.25)" fill="#f27e7c"/>
+      <circle id="layer1-3" data-name="layer1" cx="1.25" cy="1.25" r="1.25" transform="translate(25.75 14.25)" fill="#f27e7c"/>
+      <path id="opacity" d="M2,23H7V68H2ZM2,8H7V23H2Z" fill="#000064" opacity="0.15"/>
+      <path id="stroke" d="M2,23V68H77V23M2,8H77V23H2Z" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle id="stroke-2" data-name="stroke" cx="1.25" cy="1.25" r="1.25" transform="translate(8.25 14.25)" stroke-width="2" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle id="stroke-3" data-name="stroke" cx="1.25" cy="1.25" r="1.25" transform="translate(17 14.25)" stroke-width="2" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <circle id="stroke-4" data-name="stroke" cx="1.25" cy="1.25" r="1.25" transform="translate(25.75 14.25)" stroke-width="2" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+  </g>
+</svg>

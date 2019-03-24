@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d82929;
+      }
+    </style>
+  </defs>
+  <g id="Temp_Check_Box_Checked" transform="translate(-553 -241)">
+    <path id="Selection_Control_Checkbox_On_Enabled" data-name="Selection Control / Checkbox / On / Enabled" class="cls-1" d="M18.444-681H7.556A1.555,1.555,0,0,0,6-679.444v10.889A1.555,1.555,0,0,0,7.556-667H18.444A1.555,1.555,0,0,0,20-668.555v-10.889A1.555,1.555,0,0,0,18.444-681Zm-7,10.889L7.556-674l1.1-1.1,2.792,2.784,5.9-5.9,1.1,1.1Z" transform="translate(547 922)"/>
+  </g>
+</svg>

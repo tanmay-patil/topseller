@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="그룹_2451" data-name="그룹 2451" transform="translate(-761 -460)">
+    <g id="Orion_guide" transform="translate(782.688 484.575)">
+      <path id="layer1" d="M63.762,7.9V34.032L55.1,28.257l-8.663,5.775V7.9H43.55A11.55,11.55,0,0,0,32,19.45V82.975a11.55,11.55,0,0,1,11.55-11.55H75.313V7.9Z" transform="translate(11.313 -2.269)" fill="#ebf5ff"/>
+      <path id="layer2" d="M42,4V35.763l8.663-5.775,8.662,5.775V4Z" transform="translate(15.75 -4)" fill="#d82929"/>
+      <path id="opacity" d="M40,13.631V39.763l8.662-5.775,8.663,5.775V32.111l-5.775-3.9-8.662,5.775V8H40Z" transform="translate(14.863 -2.225)" fill="#000064" opacity="0.12"/>
+      <path id="layer1-2" data-name="layer1" d="M33.762,71.425a11.55,11.55,0,0,1,11.55,11.55V19.45A11.55,11.55,0,0,0,33.762,7.9H2V71.425Z" transform="translate(-2 -2.269)" fill="#ebf5ff"/>
+      <path id="opacity-2" data-name="opacity" d="M35.106,82.931V19.406A11.55,11.55,0,0,0,25,8V71.525A11.55,11.55,0,0,1,35.106,82.931Z" transform="translate(8.206 -2.225)" fill="#fff" opacity="0.25"/>
+      <path id="opacity-3" data-name="opacity" d="M32,19.317V82.842a11.55,11.55,0,0,1,8.663-11.117V8.2A11.55,11.55,0,0,0,32,19.317Z" transform="translate(11.313 -2.136)" fill="#000064" opacity="0.12"/>
+      <path id="stroke" d="M33.762,71.525a11.55,11.55,0,0,1,11.55,11.55V19.55A11.55,11.55,0,0,0,33.762,8H2V71.525ZM77.075,8h11.55V71.525H56.862a11.55,11.55,0,0,0-11.55,11.55" transform="translate(-2 -2.225)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="stroke-2" data-name="stroke" d="M41.763,21.325a11.55,11.55,0,0,1,11.55-11.55H56.2M73.525,35.763l-8.662-5.775L56.2,35.763V4H73.525ZM10,24.212H30.212M10,35.763H30.212M10,47.313H30.212M10,58.862H30.212m23.1-11.55H73.525M53.313,58.862H73.525" transform="translate(1.55 -4)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <circle id="타원_79" data-name="타원 79" cx="65" cy="65" r="65" transform="translate(761 460)" fill="none"/>
+  </g>
+</svg>

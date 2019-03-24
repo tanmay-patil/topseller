@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.247" height="15.061" viewBox="0 0 14.247 15.061">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ed1b24;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Download" transform="translate(-138.253 -1.898)">
+    <path id="layer2" class="cls-1" d="M22.3,6.4V16.526M18,11.583l4.3,4.943,4.3-4.653" transform="translate(123.079 -4)"/>
+    <path id="layer1" class="cls-1" d="M10,46v4.653H23.247V46" transform="translate(128.753 -34.193)"/>
+  </g>
+</svg>

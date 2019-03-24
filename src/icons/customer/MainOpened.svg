@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="그룹_1780" data-name="그룹 1780" transform="translate(1645 13708)">
+    <rect id="사각형_2336" data-name="사각형 2336" width="130" height="130" transform="translate(-1645 -13708)" fill="none"/>
+    <g id="read-email-4940_3890c1da-898c-4058-be90-ae7f014a5d0c" transform="translate(-1614 -13677)">
+      <path id="layer1" d="M58.059,34.584V21l8.624,7.439Zm-47.435,0V21L2,28.439Z" transform="translate(0 1.483)" fill="#fff4e3"/>
+      <path id="opacity" d="M58.059,34.584V21l8.624,7.439Zm-47.435,0V21L2,28.439Z" transform="translate(0 1.483)" fill="#000064" opacity="0.14"/>
+      <path id="layer2" d="M23.907,43.937c4.2-4.2,15.308-4.2,19.513,0L44.5,45.015l12.937-8.948V2H10V36.067l12.829,8.948Z" transform="translate(0.624)" fill="#ebebeb"/>
+      <path id="layer1-2" data-name="layer1" d="M44.152,41.907c-4.2-4.2-15.308-4.2-19.513,0l-1.078,1.078L2,28V64.654H66.684V28L45.23,42.985Z" transform="translate(0 2.03)" fill="#d82929"/>
+      <path id="stroke" d="M10.624,22.591,2,30.03m56.059-7.439,8.624,7.439m-8.624,6.037V2H10.624V36.067m8.624-23.286H30.03m-4.312,8.624H49.435M19.249,30.03H49.435" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="stroke-2" data-name="stroke" d="M66.684,28V64.654H2V28M45.23,42.985,66.684,28M2,28,23.453,42.985" transform="translate(0 2.03)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="stroke-3" data-name="stroke" d="M2,63.875,24.531,41.128c4.2-4.2,15.308-4.2,19.513,0L66.684,63.875" transform="translate(0 2.808)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

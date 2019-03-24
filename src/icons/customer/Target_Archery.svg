@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="그룹_2455" data-name="그룹 2455" transform="translate(11371 -4859)">
+    <g id="arrow-target-1699_b4851317-2c78-47de-870f-c23e29ee2d84" transform="translate(-11337 4886)">
+      <ellipse id="layer1" cx="32.499" cy="32.499" rx="32.499" ry="32.499" transform="translate(0 1.696)" fill="#d82929"/>
+      <ellipse id="layer1-2" data-name="layer1" cx="19.782" cy="19.782" rx="19.782" ry="19.782" transform="translate(12.717 14.412)" fill="#ed4c49"/>
+      <ellipse id="layer2" cx="19.782" cy="19.782" rx="19.782" ry="19.782" transform="translate(12.717 14.412)" fill="#fff"/>
+      <ellipse id="layer2-2" data-name="layer2" cx="5.652" cy="5.652" rx="5.652" ry="5.652" transform="translate(26.847 28.542)" fill="#fff"/>
+      <ellipse id="layer1-3" data-name="layer1" cx="5.652" cy="5.652" rx="5.652" ry="5.652" transform="translate(26.847 28.542)" fill="#ed4c49"/>
+      <path id="opacity" d="M53.26,18.2,42.238,24.558l-1.272.706L29.945,31.623l-1.272.706L25,34.449l2.967,2.967.989.989L38,47.449l.989.989,9.043,9.043A32.5,32.5,0,0,0,53.26,18.2Z" transform="translate(7.499 -0.114)" fill="#000028" opacity="0.18"/>
+      <ellipse id="stroke" cx="32.499" cy="32.499" rx="32.499" ry="32.499" stroke-width="2" transform="translate(0 1.696)" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <ellipse id="stroke-2" data-name="stroke" cx="19.782" cy="19.782" rx="19.782" ry="19.782" transform="translate(12.717 14.412)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <ellipse id="stroke-3" data-name="stroke" cx="5.652" cy="5.652" rx="5.652" ry="5.652" transform="translate(26.847 28.542)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="stroke-4" data-name="stroke" d="M14.478,66.441,6,80.571m45.216-14.13,8.478,14.13M32.847,39.735,74.671,15.573,77.5,5.4M74.671,15.573l10.456,3.391" transform="translate(-0.348 -5.4)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <rect id="사각형_2368" data-name="사각형 2368" width="130" height="130" transform="translate(-11371 4859)" fill="none"/>
+  </g>
+</svg>

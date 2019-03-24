@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+  <g id="그룹_1773" data-name="그룹 1773" transform="translate(2839 13708)">
+    <rect id="사각형_2329" data-name="사각형 2329" width="130" height="130" transform="translate(-2839 -13708)" fill="none"/>
+    <g id="edit-text-4217_710baf14-127d-4262-906f-cb87822e20dd" transform="translate(-2803 -13679.995)">
+      <path id="layer5" d="M35,6.667H31.383a5.833,5.833,0,0,0-11.433,0H16.333A2.333,2.333,0,0,0,14,9v7H37.333V9A2.333,2.333,0,0,0,35,6.667Z" transform="translate(2 0)" fill="#c3d1ff"/>
+      <path id="layer4" d="M34.933,50.7,29.8,63.883l13.3-5.017L34.933,50.7Z" transform="translate(4.633 8.116)" fill="#efcaa8"/>
+      <path id="layer3" d="M66.633,38.167,58.466,30,34.2,54.15l8.167,8.167Z" transform="translate(5.366 4.667)" fill="#d82929"/>
+      <path id="layer2" d="M40.383,57H11.333V15H16V8H4.333A2.333,2.333,0,0,0,2,10.333V64a2.333,2.333,0,0,0,2.333,2.333H36.3l3.267-8.516ZM44,15V53.382l9.333-9.333V10.333A2.333,2.333,0,0,0,51,8H39.333v7Z" transform="translate(0 1.001)" fill="#dda991"/>
+      <path id="layer1" d="M38,14H10V56H39.049l3.617-3.617V14Z" transform="translate(1.333 2.001)" fill="#ebf5ff"/>
+      <path id="opacity" d="M33.716,56.832H10.5v-38.5H7v42H31.15l-2.217,5.833h6.533l3.267-8.517.817-.817,3.617-3.617L52.5,43.883V38.166ZM10.5,11.333v7H33.833v-3.5H15.167V9H12.833A2.333,2.333,0,0,0,10.5,11.333Z" transform="translate(0.833 1.167)" fill="#000064" opacity="0.15"/>
+      <path id="stroke" d="M36.3,66.332H4.333A2.333,2.333,0,0,1,2,64V10.333A2.333,2.333,0,0,1,4.333,8h11.55m23.45,0H51a2.333,2.333,0,0,1,2.333,2.333V44.166" transform="translate(0 1.001)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="stroke-2" data-name="stroke" d="M35.666,6.667H32.05a5.833,5.833,0,0,0-11.433,0H17A2.333,2.333,0,0,0,14.667,9v7H38V9A2.333,2.333,0,0,0,35.666,6.667Zm7,47.716V16H38M14.667,16H10V58H39.049M19.333,25.334h14M19.333,37h14m-14,11.666h14m29.166-14L38.233,58.816,33.1,72l13.3-5.017,24.266-24.15ZM38.233,58.816,46.4,66.983" transform="translate(1.333 0)" fill="none" stroke="#2e4369" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
