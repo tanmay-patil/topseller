@@ -27,7 +27,7 @@ export default class MainCategory extends Component {
 
     getDummyProductList = () => {
         const arr = [];
-        for (let index = 0; index < 50; index++) {
+        for (let index = 0; index < 10; index++) {
             arr.push({
                 id: 'T12345',
                 ranking: PRODUCT_RANKING_LABEL.TOP,
