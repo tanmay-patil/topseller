@@ -5,7 +5,21 @@ import './PlainList.scss';
 
 export default class PlainList extends Component {
     render() {
-        const { products, shouldDisplayRanking } = this.props;
+        const { products, shouldDisplayRanking, cardDisplayLimit } = this.props;
+
+        const productCards = [];
+        for (let index = 1; index <= cardDisplayLimit; index++) {
+            const product = products[index];
+            productCards.push(
+                <Grid key={index} item>
+                    <ProductCard
+                        shouldDisplayRanking={shouldDisplayRanking}
+                        index={index}
+                        product={product}
+                    />
+                </Grid>
+            );
+        }
 
         return (
             <Grid
@@ -17,15 +31,7 @@ export default class PlainList extends Component {
                 justify="center"
                 spacing={Number(16)}
             >
-                {products.map((product, i) => (
-                    <Grid key={i} item>
-                        <ProductCard
-                            shouldDisplayRanking={shouldDisplayRanking}
-                            index={i + 1}
-                            product={product}
-                        />
-                    </Grid>
-                ))}
+                {productCards}
             </Grid>
         );
     }

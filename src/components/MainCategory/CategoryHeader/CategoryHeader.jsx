@@ -18,12 +18,17 @@ const Keywords = () => {
 };
 
 export default class CategoryHeader extends Component {
+    handleViewMoreClick = () => {
+        console.log('TEST123');
+    };
+
     render() {
         const {
             isFirstHeaderTextDark,
             firstHeaderText,
             secondHeaderText,
-            showPopularKeywords
+            showPopularKeywords,
+            handleViewMore
         } = this.props;
 
         const firstHeaderTextClass = isFirstHeaderTextDark
@@ -80,7 +85,9 @@ export default class CategoryHeader extends Component {
 
                     <div className="grow" />
 
-                    <span className="view-more-link">View More +</span>
+                    <span onClick={handleViewMore} className="view-more-link">
+                        View More +
+                    </span>
                 </Grid>
             </div>
         );

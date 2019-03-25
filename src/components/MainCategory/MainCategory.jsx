@@ -25,20 +25,6 @@ export default class MainCategory extends Component {
         spacing: 16
     };
 
-    getDummyProductList = () => {
-        const arr = [];
-        for (let index = 0; index < 10; index++) {
-            arr.push({
-                id: 'T12345',
-                ranking: PRODUCT_RANKING_LABEL.TOP,
-                imgUrl: 'https://picsum.photos/400/400/?image=2' + index,
-                name: `Sample Product Name First ${index} - Sample`,
-                price: '1230'
-            });
-        }
-        return arr;
-    };
-
     handleScroll = direction => {
         direction === 'left'
             ? this.sliderListRef.current.handleScrollLeft()
@@ -53,12 +39,15 @@ export default class MainCategory extends Component {
             secondHeaderText,
             isFirstHeaderTextDark,
             shouldDisplayRanking,
-            showPopularKeywords
+            showPopularKeywords,
+            products,
+            cardDisplayLimit,
+            handleViewMore
         } = this.props;
 
         this.sliderListRef = React.createRef();
 
-        const DUMMY_PRODUCT_LIST = this.getDummyProductList();
+        // const DUMMY_PRODUCT_LIST = this.getDummyProductList();
 
         return (
             <Grid
@@ -74,11 +63,13 @@ export default class MainCategory extends Component {
                         secondHeaderText={secondHeaderText}
                         isFirstHeaderTextDark={isFirstHeaderTextDark}
                         showPopularKeywords={showPopularKeywords}
+                        handleViewMore={handleViewMore}
                     />
                     {listType === 'plain' ? (
                         <PlainList
                             shouldDisplayRanking={shouldDisplayRanking}
-                            products={DUMMY_PRODUCT_LIST}
+                            products={products}
+                            cardDisplayLimit={cardDisplayLimit}
                         />
                     ) : null}
 
@@ -94,7 +85,8 @@ export default class MainCategory extends Component {
                     {listType === 'slider' ? (
                         <SliderList
                             ref={this.sliderListRef}
-                            products={DUMMY_PRODUCT_LIST}
+                            products={products}
+                            cardDisplayLimit={cardDisplayLimit}
                         />
                     ) : null}
 

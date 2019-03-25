@@ -21,7 +21,17 @@ export default class SliderList extends Component {
     };
 
     render() {
-        const { products } = this.props;
+        const { products, cardDisplayLimit } = this.props;
+
+        const productCards = [];
+        for (let index = 1; index <= cardDisplayLimit; index++) {
+            const product = products[index];
+            productCards.push(
+                <div key={index} className="slider-card">
+                    <ProductCard index={index} product={product} />
+                </div>
+            );
+        }
 
         this.handleScrollLeft();
 
@@ -30,11 +40,7 @@ export default class SliderList extends Component {
                 ref={this.testRef}
                 className="main-category-resize scrolling-wrapper-flexbox"
             >
-                {products.map((product, i) => (
-                    <div key={i} className="slider-card">
-                        <ProductCard index={i + 1} product={product} />
-                    </div>
-                ))}
+                {productCards}
             </div>
         );
     }
