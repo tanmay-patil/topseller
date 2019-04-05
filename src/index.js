@@ -13,20 +13,46 @@ import Header from './components/header';
 import Footer from './components/footer';
 import MainPage from './pages/MainPage/MainPage';
 import SpecialBanner from './pages/SpecialBanner/SpecialBanner';
+import FindAccountInfo from './components/FindAccountInfo/FindAccountInfo';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+    palette: {
+        primary: {
+            main: '#d82929',
+            dark: '#d82929'
+        },
+        secondary: {
+            main: '#d82929'
+        }
+    },
+    typography: {
+        useNextVariants: true,
+
+        fontFamily: "'Open Sans', sans-serif"
+    }
+});
 
 ReactDOM.render(
     <Provider store={Store}>
-        <ConnectedRouter history={history}>
-            <>
-                <Header />
-                <Switch>
-                    <Route exact path="/" component={MainPage} />
-                    <Route exact path="/special" component={SpecialBanner} />
-                    {/* <Route exact path="/main/" component={Main} /> */}
-                </Switch>
-                <Footer />
-            </>
-        </ConnectedRouter>
+        <MuiThemeProvider theme={theme}>
+            <ConnectedRouter history={history}>
+                <>
+                    <Header />
+                    <FindAccountInfo />
+                    <Switch>
+                        <Route exact path="/" component={MainPage} />
+                        <Route
+                            exact
+                            path="/special"
+                            component={SpecialBanner}
+                        />
+                        {/* <Route exact path="/main/" component={Main} /> */}
+                    </Switch>
+                    <Footer />
+                </>
+            </ConnectedRouter>
+        </MuiThemeProvider>
     </Provider>,
     document.getElementById('root')
 );
