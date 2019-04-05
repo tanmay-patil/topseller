@@ -8,7 +8,7 @@ import { PRODUCT_RANKING_LABEL } from '../../services/types';
 
 const getDummyProductList = () => {
     const arr = [];
-    for (let index = 1; index <= 31; index++) {
+    for (let index = 1; index <= 50; index++) {
         arr.push({
             id: 'T12345',
             ranking: PRODUCT_RANKING_LABEL.TOP,
@@ -18,6 +18,16 @@ const getDummyProductList = () => {
         });
     }
     return arr;
+};
+
+const customSliceArray = (array, chunk, offset) => {
+    var subarray = [];
+    for (var i = 0; i < chunk; i++) {
+        var ind = (offset + i) % array.length;
+        subarray.push(array[ind]);
+    }
+
+    return subarray;
 };
 
 // Main page contains all the categories eg. Special, top 100, abroad
@@ -45,6 +55,8 @@ export default class MainPage extends Component {
     render() {
         const { top100 } = this.state;
 
+        const products = getDummyProductList();
+
         return (
             <Grid item className="main-page-container" container spacing={24}>
                 <Grid item xs={12}>
@@ -58,8 +70,7 @@ export default class MainPage extends Component {
                         isFirstHeaderTextDark={false}
                         listType="plain"
                         shouldDisplayRanking={true}
-                        products={getDummyProductList()}
-                        cardDisplayLimit={10}
+                        products={customSliceArray(products, 10, 0)}
                         handleViewMore={() => this.handleViewMore('top100', 5)}
                     />
                     <MainCategory
@@ -69,8 +80,7 @@ export default class MainPage extends Component {
                         listType="slider"
                         shouldDisplayRanking={false}
                         showPopularKeywords={true}
-                        products={getDummyProductList()}
-                        cardDisplayLimit={10}
+                        products={customSliceArray(products, 10, 0)}
                         handleViewMore={() => this.handleViewMore('top100', 5)}
                     />
 
@@ -80,8 +90,7 @@ export default class MainPage extends Component {
                         isFirstHeaderTextDark={false}
                         listType="slider"
                         shouldDisplayRanking={false}
-                        products={getDummyProductList()}
-                        cardDisplayLimit={10}
+                        products={customSliceArray(products, 10, 0)}
                         handleViewMore={() => this.handleViewMore('top100', 5)}
                     />
 
@@ -91,8 +100,7 @@ export default class MainPage extends Component {
                         isFirstHeaderTextDark={true}
                         listType="plain"
                         shouldDisplayRanking={false}
-                        products={getDummyProductList()}
-                        cardDisplayLimit={20}
+                        products={customSliceArray(products, 10, 0)}
                         handleViewMore={() => this.handleViewMore('top100', 5)}
                     />
                 </Grid>

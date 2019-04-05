@@ -41,7 +41,6 @@ export default class MainCategory extends Component {
             shouldDisplayRanking,
             showPopularKeywords,
             products,
-            cardDisplayLimit,
             handleViewMore
         } = this.props;
 
@@ -69,7 +68,6 @@ export default class MainCategory extends Component {
                         <PlainList
                             shouldDisplayRanking={shouldDisplayRanking}
                             products={products}
-                            cardDisplayLimit={cardDisplayLimit}
                         />
                     ) : null}
 
@@ -86,7 +84,6 @@ export default class MainCategory extends Component {
                         <SliderList
                             ref={this.sliderListRef}
                             products={products}
-                            cardDisplayLimit={cardDisplayLimit}
                         />
                     ) : null}
 
