@@ -13,8 +13,9 @@ import Header from './components/header';
 import Footer from './components/footer';
 import MainPage from './pages/MainPage/MainPage';
 import SpecialBanner from './pages/SpecialBanner/SpecialBanner';
-import FindAccountInfo from './components/FindAccountInfo/FindAccountInfo';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import PhoneNumber from './components/FindAccountInfo/PhoneNumber/PhoneNumber';
+import SignIn from './components/SignIn/SignIn';
 
 const theme = createMuiTheme({
     palette: {
@@ -39,7 +40,8 @@ ReactDOM.render(
             <ConnectedRouter history={history}>
                 <>
                     <Header />
-                    <FindAccountInfo />
+                    <SignIn />
+                    <PhoneNumber />
                     <Switch>
                         <Route exact path="/" component={MainPage} />
                         <Route

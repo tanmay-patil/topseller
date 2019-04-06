@@ -3,13 +3,17 @@ import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import './FindAccountInfo.scss';
-import CustomOutlinedInput from '../UI/OutlinedInput/OutlinedInput';
-import CloseSVG from '../../icons/svg/CloseSVG';
+import './PhoneNumber.scss';
+import CustomOutlinedInput from '../../UI/OutlinedInput/OutlinedInput';
+import CloseSVG from '../../../icons/svg/CloseSVG';
+import FormControl from '@material-ui/core/FormControl';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import OutlinedInput from '@material-ui/core/OutlinedInput';
 
-export default class FindAccountInfo extends React.Component {
+export default class PhoneNumber extends React.Component {
     state = {
-        open: true
+        open: false,
+        name: ''
     };
 
     componentDidMount() {
@@ -46,7 +50,24 @@ export default class FindAccountInfo extends React.Component {
                 <DialogContent className="dialog-content">
                     <div className="dialog-content-form">
                         <div className="content-label">Phone Number</div>
-                        <CustomOutlinedInput />
+                        <FormControl fullWidth variant="outlined">
+                            <OutlinedInput
+                                fullWidth
+                                type="text"
+                                value={this.state.name}
+                                onChange={this.handleChange}
+                                labelWidth={
+                                    this.labelRef
+                                        ? this.labelRef.offsetWidth
+                                        : 0
+                                }
+                                startAdornment={
+                                    <InputAdornment position="start">
+                                        +91
+                                    </InputAdornment>
+                                }
+                            />
+                        </FormControl>
                         <Button
                             className="next-button custom-button-style"
                             fullWidth
