@@ -1,0 +1,256 @@
+.buyerMemberSignUpWrapper{
+    &__terms{
+        margin-bottom: 28px;
+        font-size: 13px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: left;
+        color: #424242;
+        span{
+            margin: 0 3px;
+        }
+    }
+    > .container {
+        span{
+            color: #d82929;
+            margin:0 5px;
+        }
+    background-color: #f4f4f4;
+    }
+    &__content{
+        padding: 26px 32px;
+        background-color: #fff;
+        @media only screen and (max-width: 768px) {
+            padding: 10px;
+        }
+        &:last-child{
+            padding: 70px 26px 32px;
+            @media only screen and (max-width: 768px) {
+                padding: 10px;
+            }
+        }
+    }
+}
+.checkbox{
+    margin-top: 43px;
+    @media only screen and (max-width: 768px) {
+        margin: 0;
+        input{
+            flex-basis: 10%;
+            margin: 0;
+        }
+    }
+    div{
+
+        display: flex;
+        flex-direction: row;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        label{
+            flex-basis: 90%;
+            margin: 0;
+            font-weight: normal;
+            span{
+                display: none;
+            }
+        }
+        input{
+            flex-basis: 6%;
+            margin: 0;
+        }
+    }
+}
+.signupInputFields{
+    margin-bottom: 24px;
+   
+    &__label{
+        font-weight: bold;
+        font-size: 13px;
+        color: #000;
+        display: block;
+        margin-bottom: 6px;
+        text-transform: capitalize;
+    }
+    &__input{
+        border: 1px solid #9b9b9b;
+        border-radius: 2px;
+        max-height: 36px;
+        width: 100%;
+        padding: 8px 12px;
+        font-size: 13px;
+        line-height: 1.38;
+        color: #000;
+    }
+}
+.GSTINNumber{
+    margin-top: 20px;
+}
+.subFields{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    position: relative;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding-bottom: 36px;
+    font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+    :first-child{
+        .subFieldsContent{
+            margin: 0;
+        }
+    }
+    .subFieldsContent{
+        margin-right: 20px;
+        margin-bottom: 11px;
+        input {
+            margin-right: 8px;
+            
+        }
+        input[type=text] {
+            position: absolute;
+            left: 25px;
+            margin: 0;
+            bottom: 0px;
+            margin: 0;
+            display: block;
+            width: 100%;
+            height: 36px;
+        
+        }
+    }
+        .signupInputFields{
+            display: flex;
+            align-items: center;
+    justify-content: flex-end;
+    width: 200px;
+    flex-direction: row-reverse;
+    label{
+        font-weight: normal;
+        font-size: 13px;
+        width: 70%;
+    }
+    input{
+        width: auto;
+    }
+        }
+}
+.customFileField{
+    .fileFields{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+.signupInputLabelFile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 52px;
+    .placeholder{
+        height: 36px;
+        font-size: 13px;
+        padding: 9px 12px;
+        font-weight: normal;
+        align-items: center;
+        display: flex;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: left;
+        color: #9b9b9b;
+        width: 85%;
+        border-radius: 2px;
+        border: solid 1px #9b9b9b;
+        background-color: #ffffff;
+    }
+    .btn-file{
+        width: 72px;
+        height: 36px;
+        border-radius: 2px;
+        background-color: #d82929;
+        margin-left: 8px;
+
+    }
+    span{
+        display: inline-block;
+        margin: 0;
+    }
+    input {
+        display: none;
+    }
+}
+}
+.submitForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
+    border: none;
+    width: 100%;
+    button {
+        width: 328px;
+        height: 40px;
+        color: #ffffff;
+        border-radius: 2px;
+        background-color: #d82929;
+        font-size: 16px;
+    }
+}
+.formBtnContainer{
+    padding: 32px 0 156px 0;
+}
+.formFieldContainer{
+    padding: 16px;
+}
+.country{
+    margin-bottom: 24px;
+}
+.addressLine{
+    margin-bottom: 8px;
+}
+.addressLine2{
+    margin-bottom: 24px;
+    span{
+        display: none;
+    }
+}
+.buyerMemberSignUpWrapper__content.left{
+    @media only screen and (min-width: 768px) {
+       max-width: 49% !important;
+       margin-right: 1.5%;
+    }
+}
+.buyerMemberSignUpWrapper__content.right{
+    @media only screen and (min-width: 768px) {
+       max-width: 49% !important;
+    }
+}
+.fieldError{
+    color: #d82929;
+    margin-top: 8px;
+}
+.flex-column{
+    display: flex;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+     }
+}
