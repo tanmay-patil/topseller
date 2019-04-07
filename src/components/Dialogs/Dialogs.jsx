@@ -32,6 +32,7 @@ export default class Dialogs extends Component {
             <div className="dialogs-container">
                 {showSigninDialog ? (
                     <SignIn
+                        history={this.props.history}
                         handleDialogVisibility={this.handleDialogVisibility}
                     />
                 ) : null}

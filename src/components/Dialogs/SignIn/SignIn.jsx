@@ -10,6 +10,7 @@ import FormControl from '@material-ui/core/FormControl';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 export default class SignIn extends React.Component {
     state = {
@@ -51,6 +52,11 @@ export default class SignIn extends React.Component {
 
     handleForgetDetailsClick = () => {
         this.props.handleDialogVisibility('showPhoneNumberDialog', true);
+        this.handleClose();
+    };
+
+    handleSignUpClick = () => {
+        this.props.history.push('signup');
         this.handleClose();
     };
 
@@ -160,7 +166,13 @@ export default class SignIn extends React.Component {
                 <div className="bottom-row">
                     <span className="helper-text">
                         Don't have an account?
-                        <span className="strong cursor-pointer"> Sign Up</span>
+                        <span
+                            onClick={this.handleSignUpClick}
+                            className="strong cursor-pointer"
+                        >
+                            {' '}
+                            Sign Up
+                        </span>
                     </span>
                 </div>
             </Dialog>

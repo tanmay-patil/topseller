@@ -17,6 +17,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Dialogs from './components/Dialogs/Dialogs';
 import BuyerMemberSignup from './components/AccountSignUp/buyerMemberSignUp/BuyerMemberSignUp';
 import ResellerSignup from './components/AccountSignUp/resellerMemberSignUp/resellerSignUp';
+import SignUpMain from './pages/SignUpMain/SignUpMain';
 
 const theme = createMuiTheme({
     palette: {
@@ -39,30 +40,25 @@ ReactDOM.render(
     <Provider store={Store}>
         <MuiThemeProvider theme={theme}>
             <ConnectedRouter history={history}>
-                <>
-                    <Header />
-                    <Dialogs />
-                    <Switch>
-                        <Route exact path="/" component={MainPage} />
-                        <Route
-                            exact
-                            path="/special"
-                            component={SpecialBanner}
-                        />
-                        <Route
-                            exact
-                            path="/buyersignup"
-                            component={BuyerMemberSignup}
-                        />
-                        <Route
-                            exact
-                            path="/resellersignup"
-                            component={ResellerSignup}
-                        />
-                        {/* <Route exact path="/main/" component={Main} /> */}
-                    </Switch>
-                    <Footer />
-                </>
+                <Header />
+                <Dialogs history={history} />
+                <Switch>
+                    <Route exact path="/" component={MainPage} />
+                    <Route exact path="/special" component={SpecialBanner} />
+                    <Route
+                        exact
+                        path="/buyersignup"
+                        component={BuyerMemberSignup}
+                    />
+                    <Route
+                        exact
+                        path="/resellersignup"
+                        component={ResellerSignup}
+                    />
+
+                    <Route exact path="/signup" component={SignUpMain} />
+                </Switch>
+                <Footer />
             </ConnectedRouter>
         </MuiThemeProvider>
     </Provider>,
