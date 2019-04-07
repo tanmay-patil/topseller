@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SignIn from './SignIn/SignIn';
 import PhoneNumber from './FindAccountInfo/PhoneNumber/PhoneNumber';
 import VerifyNumber from './FindAccountInfo/VerifyNumber/VerifyNumber';
+import SetPassword from './FindAccountInfo/SetPassword/SetPassword';
 
 /**
  * This component contains all the dialogs
@@ -11,7 +12,8 @@ export default class Dialogs extends Component {
     state = {
         showSigninDialog: true,
         showPhoneNumberDialog: false,
-        showVerifyNumberDialog: false
+        showVerifyNumberDialog: false,
+        showSetPasswordDialog: false
     };
 
     handleDialogVisibility = (dialogName, visibility) => {
@@ -22,7 +24,8 @@ export default class Dialogs extends Component {
         const {
             showPhoneNumberDialog,
             showSigninDialog,
-            showVerifyNumberDialog
+            showVerifyNumberDialog,
+            showSetPasswordDialog
         } = this.state;
 
         return (
@@ -39,7 +42,13 @@ export default class Dialogs extends Component {
                     />
                 ) : null}
 
-                {showVerifyNumberDialog ? <VerifyNumber /> : null}
+                {showVerifyNumberDialog ? (
+                    <VerifyNumber
+                        handleDialogVisibility={this.handleDialogVisibility}
+                    />
+                ) : null}
+
+                {showSetPasswordDialog ? <SetPassword /> : null}
             </div>
         );
     }

@@ -3,12 +3,13 @@ import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import './VerifyNumber.scss';
+import './SetPassword.scss';
 import CloseSVG from '../../../../icons/svg/CloseSVG';
 import FormControl from '@material-ui/core/FormControl';
-import OtpInput from 'react-otp-input';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import OutlinedInput from '@material-ui/core/OutlinedInput';
 
-export default class VerifyNumber extends React.Component {
+export default class SetPassword extends React.Component {
     state = {
         open: true,
         name: ''
@@ -32,59 +33,53 @@ export default class VerifyNumber extends React.Component {
 
     handleNext = () => {
         this.handleClose();
-        this.props.handleDialogVisibility('showSetPasswordDialog', true);
+        this.props.handleDialogVisibility('showVerifyNumberDialog', true);
     };
 
     render() {
+        const { handleDialogVisibility } = this.props;
+
         return (
             <Dialog
-                id="dialog-verify-number"
+                id="dialog-set-password"
                 className="dialog"
                 open={this.state.open}
                 onClose={this.handleClose}
                 aria-labelledby="form-dialog-title"
             >
                 <DialogTitle id="form-dialog-title">
-                    Verify
+                    Set the Password
                     <span onClick={this.handleClose} className="close-icon">
                         <CloseSVG />
                     </span>
                 </DialogTitle>
                 <DialogContent className="dialog-content">
+                    <div className="id-text">Your ID: TopsellerID</div>
+
                     <div className="dialog-content-form">
-                        <FormControl
-                            className="form-control"
-                            variant="outlined"
-                        >
-                            <OtpInput
-                                className="input-box"
-                                onChange={otp => console.log(otp)}
-                                numInputs={6}
-                                separator={<span> </span>}
+                        <div className="content-label">New Password</div>
+                        <FormControl fullWidth variant="outlined">
+                            <OutlinedInput
+                                fullWidth
+                                type="password"
+                                value={this.state.name}
+                                onChange={this.handleChange}
+                                labelWidth={
+                                    this.labelRef
+                                        ? this.labelRef.offsetWidth
+                                        : 0
+                                }
                             />
                         </FormControl>
                         <Button
                             className="next-button custom-button-style"
                             fullWidth
-                            onClick={this.handleNext}
+                            onClick={this.handleClose}
                             variant="contained"
                             color="primary"
                         >
-                            Next
+                            Done
                         </Button>
-                    </div>
-
-                    <div className="form-field justify-center margin-top-16 margin-bottom-32">
-                        <span className="helper-text">
-                            Didn't get the number?
-                            <span
-                                onClick={() => {}}
-                                className="strong cursor-pointer"
-                            >
-                                {' '}
-                                Resend the number
-                            </span>
-                        </span>
                     </div>
                 </DialogContent>
             </Dialog>
