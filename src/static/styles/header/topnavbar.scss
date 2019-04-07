@@ -9,7 +9,7 @@
         align-items: center;
         justify-content: space-between;
         margin-left: -1px;
-        &:last-child{
+        &:last-child {
             flex: 0;
         }
         &__link {
@@ -22,10 +22,15 @@
             text-align: center;
             &:not(:last-child):after {
                 content: '';
-                border: .5px solid $baseColorLight;
+                border: 0.5px solid $baseColorLight;
                 height: 26px;
                 margin: auto;
             }
         }
+    }
+
+    .non-decorated-link {
+        text-decoration: none;
+        color: #545454;
     }
 }
