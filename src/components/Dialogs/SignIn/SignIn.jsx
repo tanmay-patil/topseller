@@ -4,7 +4,7 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import './SignIn.scss';
-import CloseSVG from '../../icons/svg/CloseSVG';
+import CloseSVG from '../../../icons/svg/CloseSVG';
 import OutlinedInput from '@material-ui/core/OutlinedInput';
 import FormControl from '@material-ui/core/FormControl';
 import FormHelperText from '@material-ui/core/FormHelperText';
@@ -16,7 +16,8 @@ export default class SignIn extends React.Component {
         open: true,
         inputUserID: '',
         inputPassword: '',
-        showError: false
+        showError: false,
+        checkRememberID: false
     };
 
     componentDidMount() {
@@ -48,8 +49,19 @@ export default class SignIn extends React.Component {
         }
     };
 
+    handleForgetDetailsClick = () => {
+        this.props.handleDialogVisibility('showPhoneNumberDialog', true);
+        this.handleClose();
+    };
+
     render() {
-        const { showError, open, inputUserID, inputPassword } = this.state;
+        const {
+            showError,
+            open,
+            inputUserID,
+            inputPassword,
+            checkRememberID
+        } = this.state;
 
         return (
             <Dialog
@@ -106,11 +118,11 @@ export default class SignIn extends React.Component {
                             <FormControlLabel
                                 control={
                                     <Checkbox
-                                        checked={this.state.checkedB}
+                                        checked={checkRememberID}
                                         onChange={this.handleCheckboxChange(
-                                            'checkedB'
+                                            'checkRememberID'
                                         )}
-                                        value="checkedB"
+                                        value="checkRememberID"
                                         color="primary"
                                     />
                                 }
@@ -133,7 +145,10 @@ export default class SignIn extends React.Component {
                         <div className="form-field justify-center margin-top-16">
                             <span className="helper-text">
                                 Forgot your login details?
-                                <span className="strong cursor-pointer">
+                                <span
+                                    onClick={this.handleForgetDetailsClick}
+                                    className="strong cursor-pointer"
+                                >
                                     {' '}
                                     Get help signing in
                                 </span>

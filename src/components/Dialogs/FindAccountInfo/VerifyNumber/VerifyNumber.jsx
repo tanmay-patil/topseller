@@ -3,16 +3,14 @@ import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import './PhoneNumber.scss';
-import CustomOutlinedInput from '../../UI/OutlinedInput/OutlinedInput';
-import CloseSVG from '../../../icons/svg/CloseSVG';
+import './VerifyNumber.scss';
+import CloseSVG from '../../../../icons/svg/CloseSVG';
 import FormControl from '@material-ui/core/FormControl';
-import InputAdornment from '@material-ui/core/InputAdornment';
-import OutlinedInput from '@material-ui/core/OutlinedInput';
+import OtpInput from 'react-otp-input';
 
-export default class PhoneNumber extends React.Component {
+export default class VerifyNumber extends React.Component {
     state = {
-        open: false,
+        open: true,
         name: ''
     };
 
@@ -35,37 +33,29 @@ export default class PhoneNumber extends React.Component {
     render() {
         return (
             <Dialog
-                id="dialog-phone-number"
+                id="dialog-verify-number"
                 className="dialog"
                 open={this.state.open}
                 onClose={this.handleClose}
                 aria-labelledby="form-dialog-title"
             >
                 <DialogTitle id="form-dialog-title">
-                    Find Account Info
+                    Verify
                     <span onClick={this.handleClose} className="close-icon">
                         <CloseSVG />
                     </span>
                 </DialogTitle>
                 <DialogContent className="dialog-content">
                     <div className="dialog-content-form">
-                        <div className="content-label">Phone Number</div>
-                        <FormControl fullWidth variant="outlined">
-                            <OutlinedInput
-                                fullWidth
-                                type="text"
-                                value={this.state.name}
-                                onChange={this.handleChange}
-                                labelWidth={
-                                    this.labelRef
-                                        ? this.labelRef.offsetWidth
-                                        : 0
-                                }
-                                startAdornment={
-                                    <InputAdornment position="start">
-                                        +91
-                                    </InputAdornment>
-                                }
+                        <FormControl
+                            className="form-control"
+                            variant="outlined"
+                        >
+                            <OtpInput
+                                className="input-box"
+                                onChange={otp => console.log(otp)}
+                                numInputs={6}
+                                separator={<span> </span>}
                             />
                         </FormControl>
                         <Button
@@ -77,6 +67,19 @@ export default class PhoneNumber extends React.Component {
                         >
                             Next
                         </Button>
+                    </div>
+
+                    <div className="form-field justify-center margin-top-16 margin-bottom-32">
+                        <span className="helper-text">
+                            Didn't get the number?
+                            <span
+                                onClick={() => {}}
+                                className="strong cursor-pointer"
+                            >
+                                {' '}
+                                Resend the number
+                            </span>
+                        </span>
                     </div>
                 </DialogContent>
             </Dialog>

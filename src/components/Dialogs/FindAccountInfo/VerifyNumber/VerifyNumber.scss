@@ -1,0 +1,141 @@
+#dialog-verify-number {
+    & > div > div {
+    }
+
+    #form-dialog-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 24px !important;
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+
+        .close-icon {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            cursor: pointer;
+
+            svg {
+                fill: #b5b5b5;
+            }
+        }
+
+        h6 {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.35;
+            letter-spacing: normal;
+            text-align: center;
+            color: #424242;
+        }
+    }
+
+    .dialog-content {
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0x !important;
+        padding-bottom: 0px !important;
+        flex: 0 1 auto !important;
+        flex-direction: column;
+
+        .dialog-content-form {
+            display: flex;
+            flex-direction: column;
+            width: 328px;
+
+            .form-control {
+                margin-top: 44px;
+                flex-direction: row;
+                justify-content: center;
+
+                & > div {
+                    justify-content: space-between;
+                    width: 100%;
+                }
+
+                input {
+                    width: 40px !important;
+                    height: 36px !important;
+                    text-align: center !important;
+                    font-size: 16px;
+                    border: 1px solid rgb(216, 41, 40);
+                }
+            }
+
+            .content-label {
+                font-size: 13px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.38;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+                margin-bottom: 6px;
+            }
+
+            .next-button {
+                margin-top: 36px;
+            }
+        }
+
+        .helper-text {
+            font-size: 13px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.38;
+            letter-spacing: -0.1px;
+            text-align: left;
+            color: #7a7a7a;
+
+            .strong {
+                font-weight: bold;
+                color: #282828;
+            }
+        }
+
+        .justify-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .margin-top-16 {
+            margin-top: 16px;
+        }
+
+        .margin-bottom-32 {
+            margin-bottom: 32px;
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+    }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+    #dialog-verify-number {
+    }
+}
+
+// Desktop
+@media only screen and (min-width: 600px) {
+    #dialog-verify-number {
+        .dialog-content {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        & > div > div {
+            width: 560px;
+        }
+    }
+}
