@@ -1,0 +1,109 @@
+#dialog-terms-of-use {
+    & > div > div {
+        // height: 255px;
+    }
+
+    #form-dialog-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 24px !important;
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+
+        .close-icon {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            cursor: pointer;
+
+            svg {
+                fill: #b5b5b5;
+            }
+        }
+
+        h6 {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.35;
+            letter-spacing: normal;
+            text-align: center;
+            color: #424242;
+        }
+    }
+
+    .dialog-content {
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 16px !important;
+        padding-bottom: 0px !important;
+        flex: 0 1 auto !important;
+
+        .text-container {
+            border: solid 1px #d2d2d2;
+            padding: 20px;
+            overflow: auto;
+            margin-bottom: 30px;
+        }
+
+        .dialog-content-form {
+            display: flex;
+            flex-direction: column;
+
+            .content-label {
+                font-size: 13px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.38;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+                margin-bottom: 6px;
+            }
+
+            .next-button {
+                margin-top: 36px;
+            }
+        }
+    }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+    #dialog-terms-of-use {
+        .dialog-content {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+
+            .text-container {
+                height: 337px;
+                width: 80%;
+            }
+        }
+    }
+}
+
+// Desktop
+@media only screen and (min-width: 600px) {
+    #dialog-terms-of-use {
+        .dialog-content {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+
+            .text-container {
+                width: 512px;
+                height: 437px;
+            }
+        }
+
+        & > div > div {
+            width: 560px;
+        }
+    }
+}

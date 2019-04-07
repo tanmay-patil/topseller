@@ -3,6 +3,7 @@ import SignIn from './SignIn/SignIn';
 import PhoneNumber from './FindAccountInfo/PhoneNumber/PhoneNumber';
 import VerifyNumber from './FindAccountInfo/VerifyNumber/VerifyNumber';
 import SetPassword from './FindAccountInfo/SetPassword/SetPassword';
+import TermsOfUse from './TermsOfUse/TermsOfUse';
 
 /**
  * This component contains all the dialogs
@@ -13,7 +14,8 @@ export default class Dialogs extends Component {
         showSigninDialog: true,
         showPhoneNumberDialog: false,
         showVerifyNumberDialog: false,
-        showSetPasswordDialog: false
+        showSetPasswordDialog: false,
+        showTermsOfUseDialog: false
     };
 
     handleDialogVisibility = (dialogName, visibility) => {
@@ -25,7 +27,8 @@ export default class Dialogs extends Component {
             showPhoneNumberDialog,
             showSigninDialog,
             showVerifyNumberDialog,
-            showSetPasswordDialog
+            showSetPasswordDialog,
+            showTermsOfUseDialog
         } = this.state;
 
         return (
@@ -50,6 +53,8 @@ export default class Dialogs extends Component {
                 ) : null}
 
                 {showSetPasswordDialog ? <SetPassword /> : null}
+
+                {showTermsOfUseDialog ? <TermsOfUse /> : null}
             </div>
         );
     }
