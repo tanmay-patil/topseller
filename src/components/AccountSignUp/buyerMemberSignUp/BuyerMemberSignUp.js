@@ -9,6 +9,13 @@ import RenderDropdownList from '../sharedComponents/dropdownList';
 import { Country } from '../sharedComponents/getCountryDetails';
 import { BuyerMemberFormLeft, BuyerMemberFormRight, validate } from '../formFieldsConfig/buyerMemberForm';
 class BuyerMemberSignUp extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            submittedSuccess: false
+        }
+        this.onSubmit = this.onSubmit.bind(this);
+    }
     renderForms() {
         return (
             <div className="buyerMemberSignUpWrapper">
@@ -44,6 +51,27 @@ class BuyerMemberSignUp extends Component {
     }
     onSubmit(e) {
         console.log(e);
+        const signUpModel = {
+            "address1": e.AddressLine,
+            "address2": e.AddressLine2,
+            "agreeForReceivingMail": e.terms,
+            "country": e.country,
+            "email": e.email,
+            "entityName": e.EntityName,
+            "gstin": e.GSTINNumber,
+            "gstinCertificate": e.GSTINCertificate,
+            "password": e.password,
+            "personalIdentificationNumber": e.PANnumber,
+            "personalIdentificationNumberCardImage": e.PANCardCopy,
+            "phoneNumber": e.ContactNumber,
+            "pinCode": e.pincode,
+            "state": e.state,
+            "username": e.ID
+        };
+        this.setState({
+            submittedSuccess: true
+        });
+        this.props.reset();
     }
     render() {
         return (
@@ -61,6 +89,7 @@ class BuyerMemberSignUp extends Component {
                     <Grid container className="formBtnContainer">
                         <Grid item xs={12}>
                             <div className="submitForm" > <button type="submit">Register</button></div>
+                            {this.state.submittedSuccess && <div className="formSubmitted">Your signup form submitted successfully</div>}
                         </Grid>
                     </Grid>
                 </form>

@@ -193,12 +193,6 @@ export const validate = formValues => {
     if (!formValues.PANCardCopy) {
         errors.PANCardCopy = 'Please Enter PAN Card Copy';
     }
-    if (!formValues.GSTINNumber) {
-        errors.GSTINNumber = 'Please Enter GSTIN Number';
-    }
-    if (!formValues.GSTINCertificate) {
-        errors.GSTINCertificate = 'Please Enter GSTIN Certificate';
-    }
     if (!formValues.EntityCountry) {
         errors.EntityCountry = 'Please Enter Entity Country';
     }

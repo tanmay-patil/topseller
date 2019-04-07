@@ -9,6 +9,13 @@ import RenderDropdownList from '../sharedComponents/dropdownList';
 import { Country } from '../sharedComponents/getCountryDetails';
 import { ResellerMemberFormRight, ResellerMemberFormLeft, validate } from '../formFieldsConfig/resellerMemberSignup';
 class ResellerMemberSignUp extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            submittedSuccess: false
+        }
+        this.onSubmit = this.onSubmit.bind(this);
+    }
     renderForms() {
         return (
             <div className="buyerMemberSignUpWrapper">
@@ -49,6 +56,10 @@ If you do not have GSTIN, please fill in the address based on registered office.
     }
     onSubmit(e) {
         console.log(e);
+        this.setState({
+            submittedSuccess: true
+        });
+        this.props.reset();
     }
     render() {
         return (
@@ -66,6 +77,7 @@ If you do not have GSTIN, please fill in the address based on registered office.
                     <Grid container className="formBtnContainer">
                         <Grid item xs={12}>
                             <div className="submitForm" > <button type="submit">Register</button></div>
+                            {this.state.submittedSuccess && <div className="formSubmitted">Your signup form submitted successfully</div>}
                         </Grid>
                     </Grid>
                 </form>
