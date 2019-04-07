@@ -47,8 +47,8 @@
         .dialog-content-form {
             display: flex;
             flex-direction: column;
-            width: 328px;
-
+            // width: 328px;
+            justify-content: space-between;
             .form-control {
                 margin-top: 44px;
                 flex-direction: row;
@@ -57,14 +57,6 @@
                 & > div {
                     justify-content: space-between;
                     width: 100%;
-                }
-
-                input {
-                    width: 40px !important;
-                    height: 36px !important;
-                    text-align: center !important;
-                    font-size: 16px;
-                    border: 1px solid rgb(216, 41, 40);
                 }
             }
 
@@ -123,6 +115,11 @@
 // Mobile
 @media only screen and (max-width: 600px) {
     #dialog-verify-number {
+        .dialog-content {
+            .dialog-content-form {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -132,6 +129,17 @@
         .dialog-content {
             padding-left: 0px !important;
             padding-right: 0px !important;
+
+            .dialog-content-form {
+                width: 360px;
+                input {
+                    width: 40px !important;
+                    height: 36px !important;
+                    text-align: center !important;
+                    font-size: 16px;
+                    border: 1px solid rgb(216, 41, 40);
+                }
+            }
         }
 
         & > div > div {

@@ -7,7 +7,8 @@ import './VerifyNumber.scss';
 import CloseSVG from '../../../../icons/svg/CloseSVG';
 import FormControl from '@material-ui/core/FormControl';
 import OtpInput from 'react-otp-input';
-
+import { Desktop, Mobile } from '../../../../services/ScreenSizeDefinitions';
+import OutlinedInput from '@material-ui/core/OutlinedInput';
 export default class VerifyNumber extends React.Component {
     state = {
         open: true,
@@ -56,12 +57,34 @@ export default class VerifyNumber extends React.Component {
                             className="form-control"
                             variant="outlined"
                         >
-                            <OtpInput
-                                className="input-box"
-                                onChange={otp => console.log(otp)}
-                                numInputs={6}
-                                separator={<span> </span>}
-                            />
+                            <Desktop>
+                                <OtpInput
+                                    className="input-box"
+                                    onChange={otp => console.log(otp)}
+                                    numInputs={6}
+                                    separator={<span> </span>}
+                                />
+                            </Desktop>
+                            <Mobile>
+                                <div className="fields-container">
+                                    <div className="content-label">
+                                        Verify Number
+                                    </div>
+                                    <FormControl fullWidth variant="outlined">
+                                        <OutlinedInput
+                                            fullWidth
+                                            type="text"
+                                            value={this.state.name}
+                                            onChange={this.handleChange}
+                                            labelWidth={
+                                                this.labelRef
+                                                    ? this.labelRef.offsetWidth
+                                                    : 0
+                                            }
+                                        />
+                                    </FormControl>
+                                </div>
+                            </Mobile>
                         </FormControl>
                         <Button
                             className="next-button custom-button-style"
