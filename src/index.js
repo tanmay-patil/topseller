@@ -15,6 +15,8 @@ import MainPage from './pages/MainPage/MainPage';
 import SpecialBanner from './pages/SpecialBanner/SpecialBanner';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Dialogs from './components/Dialogs/Dialogs';
+import BuyerMemberSignup from './components/AccountSignUp/buyerMemberSignUp/BuyerMemberSignUp';
+import ResellerSignup from './components/AccountSignUp/resellerMemberSignUp/resellerSignUp';
 
 const theme = createMuiTheme({
     palette: {
@@ -46,6 +48,16 @@ ReactDOM.render(
                             exact
                             path="/special"
                             component={SpecialBanner}
+                        />
+                        <Route
+                            exact
+                            path="/buyersignup"
+                            component={BuyerMemberSignup}
+                        />
+                        <Route
+                            exact
+                            path="/resellersignup"
+                            component={ResellerSignup}
                         />
                         {/* <Route exact path="/main/" component={Main} /> */}
                     </Switch>

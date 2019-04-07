@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, InputBase } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { Field, reduxForm } from 'redux-form';
 import SearchIcon from '@material-ui/icons/Search';
 
@@ -8,6 +8,7 @@ class Search extends React.Component {
         return <input className="searchField__input" onChange={formProps.input.onChange} value={formProps.input.value} placeholder="Total 5,000 products are listed" />;
     }
     onSubmit(formValues) {
+        // Get the form input values
         console.log(formValues);
     }
     render() {
