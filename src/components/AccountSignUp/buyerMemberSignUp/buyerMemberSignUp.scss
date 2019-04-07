@@ -270,3 +270,41 @@
       font-weight: 300;
   }
 }
+.subFieldsContent:not(.other){
+.radioContainer{
+    position: relative;
+    cursor: pointer;
+    input[type=radio]{
+        visibility: hidden;
+    }
+    .radioCircle{
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border: 2px solid #979797;
+        position: absolute;
+        border-radius: 50%;
+        top: 2px;
+        margin: 0;
+        left: 0;
+    }
+    &:hover .radioCircle{
+        background:#eee;
+    }
+    input[type=radio]:checked + .radioCircle {
+        border: 2px solid #5ade9c;
+        &:after{
+            content: '';
+            width: 5px;
+            height: 5px;
+            display: inline-block;
+            background: #5ade9c;
+            position: absolute; 
+            border-radius: 50%;
+            left: 50%;
+            top:50%;
+            transform: translate(-50%, -50%);
+        }
+      }
+}
+}

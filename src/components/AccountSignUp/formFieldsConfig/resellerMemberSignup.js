@@ -81,6 +81,7 @@ export const ResellerMemberFormLeft = [
             label: '',
             name: 'othersValue',
             type: 'text',
+            class: 'other',
             value: ''
         },
 

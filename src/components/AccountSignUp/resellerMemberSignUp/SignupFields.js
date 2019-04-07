@@ -22,7 +22,7 @@ class SignupFields extends React.Component {
             </span><span className="btn-file"></span></div></label></div>);
         }
         if (type === 'file' && this.props.input.name === 'PANCardCopy') {
-            return (<div className="customFileField"><label className="signupInputLabelFile"><b className="signupInputFields__label">{props.label}</b><div className="fileFields"><input className="signupInputFields__input__file" {...this.props.input} type={props.type} onChange={this.onChangeFile} /> <span className="placeholder">
+            return (<div className="customFileField"><label className="signupInputLabelFile"><b className="signupInputFields__label">{props.label}</b><div className="fileFields"><input className="signupInputFields__input__file" {...this.props.input} type={props.type} accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" onChange={this.onChangeFile} /> <span className="placeholder">
                 {this.state.GSTINCertificate !== null ? this.state.GSTINCertificate : props.input.name === 'GSTINCertificate' && 'Submit GST Certificate'} {this.state.PANCardCopy !== null ? this.state.PANCardCopy : props.input.name === 'PANCardCopy' && 'Submit PAN Card Copy'}
             </span><span className="btn-file"></span></div></label></div>);
         }

@@ -76,6 +76,7 @@ export const BuyerMemberFormLeft = [
             label: '',
             name: 'othersValue',
             type: 'text',
+            class: 'other',
             value: ''
         },
 
@@ -101,7 +102,7 @@ export const BuyerMemberFormRight = [
     },
 
     [
-        { title: 'Do you have GSTIN?', inputType: 'none' },
+        { title: 'Do you have GSTIN?', inputType: 'none', class: 'gstin' },
         {
             label: 'Yes',
             name: 'gstin',
