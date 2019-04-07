@@ -49,25 +49,48 @@ class BuyerMemberSignUp extends Component {
             </div>
         );
     }
-    onSubmit(e) {
-        console.log(e);
-        const signUpModel = {
-            "address1": e.AddressLine,
-            "address2": e.AddressLine2,
-            "agreeForReceivingMail": e.terms,
-            "country": e.country,
-            "email": e.email,
-            "entityName": e.EntityName,
-            "gstin": e.GSTINNumber,
-            "gstinCertificate": e.GSTINCertificate,
-            "password": e.password,
-            "personalIdentificationNumber": e.PANnumber,
-            "personalIdentificationNumberCardImage": e.PANCardCopy,
-            "phoneNumber": e.ContactNumber,
-            "pinCode": e.pincode,
-            "state": e.state,
-            "username": e.ID
-        };
+    onSubmit(data) {
+        // console.log(data);
+        const formInput = [data]
+        const formData = new FormData();
+        // const signUpModel = [{
+        //     "address1": e.AddressLine,
+        //     "address2": e.AddressLine2,
+        //     "agreeForReceivingMail": e.terms,
+        //     "country": e.country,
+        //     "email": e.email,
+        //     "entityName": e.EntityName,
+        //     "gstin": e.GSTINNumber,
+        //     "gstinCertificate": e.GSTINCertificate,
+        //     "password": e.password,
+        //     "personalIdentificationNumber": e.PANnumber,
+        //     "personalIdentificationNumberCardImage": e.PANCardCopy,
+        //     "phoneNumber": e.ContactNumber,
+        //     "pinCode": e.pincode,
+        //     "state": e.state,
+        //     "username": e.ID
+        // }]
+        const a = formInput.forEach(item => {
+            formData.append("address1", item.AddressLine);
+            formData.append("address2", item.AddressLine2);
+            formData.append("agreeForReceivingMail", item.terms);
+            formData.append("country", item.country);
+            formData.append("email", item.email);
+            formData.append("entityName", item.EntityName);
+            formData.append("gstin", item.GSTINNumber);
+            formData.append("gstinCertificate", item.GSTINCertificate);
+            formData.append("password", item.password);
+            formData.append("personalIdentificationNumber", item.PANnumber);
+            formData.append("personalIdentificationNumberCardImage", item.PANCardCopy);
+            formData.append("phoneNumber", item.ContactNumber);
+            formData.append("pinCode", item.pincode);
+            formData.append("state", item.state);
+            formData.append("username", item.ID);
+            return formData;
+        });
+        // for (var key of formData.entries()) {
+        //     console.log(key[0] + ', ' + key[1])
+        // }
         this.setState({
             submittedSuccess: true
         });
