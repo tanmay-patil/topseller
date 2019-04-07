@@ -11,13 +11,15 @@ class MobileNavDrawer extends Component {
     }
     toggleDrawer = (side, open) => () => {
         this.setState({
-            left: open,
+            left: open
         });
     };
     render() {
         return (
             <MediaQuery query="(max-device-width: 768px)">
-                <Button onClick={this.toggleDrawer('left', true)}><MenuIcon /></Button>
+                <Button onClick={this.toggleDrawer('left', true)}>
+                    <MenuIcon />
+                </Button>
                 <SwipeableDrawer
                     open={this.state.left}
                     onClose={this.toggleDrawer('left', false)}
@@ -40,7 +42,12 @@ class MobileNavDrawer extends Component {
                                 <a href="#/non">Sign up</a>
                             </li>
                             <li>
-                                <a href="#/non">Vendor System</a>
+                                <a
+                                    href="http://52.14.150.53:3000"
+                                    target="_blank"
+                                >
+                                    Vendor System
+                                </a>
                             </li>
                             <li>
                                 <a href="#/non">Sell on TopSeller</a>
@@ -52,7 +59,7 @@ class MobileNavDrawer extends Component {
                     </div>
                 </SwipeableDrawer>
             </MediaQuery>
-        )
+        );
     }
 }
 export default MobileNavDrawer;
