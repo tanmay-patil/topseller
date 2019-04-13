@@ -18,6 +18,8 @@ import Dialogs from './components/Dialogs/Dialogs';
 import BuyerMemberSignup from './components/AccountSignUp/buyerMemberSignUp/BuyerMemberSignUp';
 import ResellerSignup from './components/AccountSignUp/resellerMemberSignUp/resellerSignUp';
 import SignUpMain from './pages/SignUpMain/SignUpMain';
+import MyPageBuyerNotice from './pages/MyPageBuyerNotice/MyPageBuyerNotice';
+import MyPageResellerNotice from './pages/MyPageResellerNotice/MyPageResellerNotice';
 
 const theme = createMuiTheme({
     palette: {
@@ -57,6 +59,17 @@ ReactDOM.render(
                     />
 
                     <Route exact path="/signup" component={SignUpMain} />
+
+                    <Route
+                        exact
+                        path="/mypagebuyernotice"
+                        component={MyPageBuyerNotice}
+                    />
+                    <Route
+                        exact
+                        path="/mypageresellernotice"
+                        component={MyPageResellerNotice}
+                    />
                 </Switch>
                 <Footer />
             </ConnectedRouter>

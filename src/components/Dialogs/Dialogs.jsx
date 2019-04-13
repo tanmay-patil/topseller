@@ -11,7 +11,7 @@ import TermsOfUse from './TermsOfUse/TermsOfUse';
  */
 export default class Dialogs extends Component {
     state = {
-        showSigninDialog: true,
+        showSigninDialog: false,
         showPhoneNumberDialog: false,
         showVerifyNumberDialog: false,
         showSetPasswordDialog: false,
