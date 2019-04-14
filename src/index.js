@@ -20,7 +20,7 @@ import ResellerSignup from './components/AccountSignUp/resellerMemberSignUp/rese
 import SignUpMain from './pages/SignUpMain/SignUpMain';
 import MyPageBuyerNotice from './pages/MyPageBuyerNotice/MyPageBuyerNotice';
 import MyPageResellerNotice from './pages/MyPageResellerNotice/MyPageResellerNotice';
-
+import MassOrderResellerSteps from './components/MassOrderResellerSteps';
 const theme = createMuiTheme({
     palette: {
         primary: {
@@ -70,6 +70,8 @@ ReactDOM.render(
                         path="/mypageresellernotice"
                         component={MyPageResellerNotice}
                     />
+
+                    <Route path="/MassOrderResellerSteps" component={MassOrderResellerSteps} />
                 </Switch>
                 <Footer />
             </ConnectedRouter>

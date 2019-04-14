@@ -1,0 +1,71 @@
+.step1__container {
+    padding-top: 40px;
+    border: solid 1px #d2d2d2;
+    border-top: none;
+    margin-bottom: 156px;
+}
+
+.step1__download,
+.step1__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.step1__download {
+    margin-bottom: 48px;
+
+    h2 {
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.88;
+        letter-spacing: normal;
+        text-align: left;
+        color: #424242;
+    }
+
+    button {
+        cursor: pointer;
+        width: 138px;
+        height: 40px;
+        border-radius: 2px;
+        background-color: #d82929;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+.customFileField {
+    max-width: 508px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.step1__info {
+    margin-bottom: 48px;
+    padding: 0 85px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #424242;
+
+}
