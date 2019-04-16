@@ -12,14 +12,29 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import { BrowserRouter as Router } from 'react-router-dom';
 import axios from 'axios';
+import UserServices from '../../../services/UserServices';
+import { connect } from 'react-redux';
+import { setUserAuth } from '../../../actions/index';
+import { Redirect } from 'react-router-dom';
+import PhoneNumber from '../FindAccountInfo/PhoneNumber/PhoneNumber';
+import VerifyNumber from '../FindAccountInfo/VerifyNumber/VerifyNumber';
 
-export default class SignIn extends React.Component {
+class SignIn extends React.Component {
     state = {
         open: true,
-        inputUserID: '',
-        inputPassword: '',
+        inputUserID: 'admin@topseller.com',
+        inputPassword: 'TopSeller1+',
         showError: false,
-        checkRememberID: false
+        checkRememberID: false,
+        showSigninDialog: false,
+        showPhoneNumberDialog: false,
+        showVerifyNumberDialog: false,
+        showSetPasswordDialog: false,
+        showTermsOfUseDialog: false
+    };
+
+    handleDialogVisibility = (dialogName, visibility) => {
+        this.setState({ [dialogName]: visibility });
     };
 
     componentDidMount() {
@@ -31,7 +46,7 @@ export default class SignIn extends React.Component {
     };
 
     handleClose = () => {
-        this.setState({ open: false });
+        // this.setState({ open: false });
     };
 
     handleCheckboxChange = name => event => {
@@ -50,75 +65,56 @@ export default class SignIn extends React.Component {
             this.setState({ showError: true });
         }
 
-        var axiosConfig = {
-            headers: {
-                Authorization:
-                    'Basic ' +
-                    Buffer.from('topseller:topseller').toString('base64'),
-                Accept: 'application/json'
-            }
-        };
+        UserServices.login(this.state.inputUserID, this.state.inputPassword);
+    };
 
-        // axios
-        //     .post(
-        //         'http://3.18.163.90/oauth/token',
-        //         {
-        //             grant_type: 'password',
-        //             client_id: 'topseller',
-        //             client_secret: 'topseller',
-        //             username: 'admin@topseller.com',
-        //             password: 'TopSeller1+'
-        //         }
-        //         // axiosConfig
-        //     )
-        //     .then(function(response) {
-        //         console.log(response);
-        //     })
-        //     .catch(function(error) {
-        //         console.log(error);
-        //     });
+    handleLoginClick = () => {
+        const { inputUserID, inputPassword } = this.state;
+        const { userStore } = this.props;
 
-        let bodyFormData = new FormData();
-        bodyFormData.set('username', 'admin@topseller.com');
-        bodyFormData.set('password', 'TopSeller1+');
-        bodyFormData.set('grant_type', 'password');
-        bodyFormData.set('scope', 'read write');
+        // if (this.validateLogin()) {
+        this.login(inputUserID, inputPassword);
+        // }
+    };
 
-        axios({
-            method: 'post',
-            url: 'http://3.18.163.90/oauth/token',
-            data: {
-                grant_type: 'password',
-                client_id: 'topseller',
-                client_secret: 'topseller',
-                username: 'admin@topseller.com',
-                password: 'TopSeller1+'
-            },
-            config: {
-                headers: {
-                    Authorization: 'Basic dG9wc2VsbGVyOnRvcHNlbGxlcg==',
-                    Accept: 'application/json'
+    login = (username, password) => {
+        const OAuth2 = UserServices.getOAuth2();
+
+        return OAuth2.owner
+            .getToken(username, password)
+            .then(response => {
+                // SUCCESS
+                console.log('LOGIN SUCCESSFULL');
+                console.log(response);
+
+                if (response.data['access_token']) {
+                    const accessToken = response.data['access_token'];
+
+                    // Set access token in local storage
+                    window.localStorage.setItem(
+                        'topseller_accessToken',
+                        accessToken
+                    );
+
+                    // Set user in redux
+                    this.props.setUserAuth(response);
+
+                    return accessToken;
                 }
-            }
-        })
-            .then(function(response) {
-                //handle success
-                console.log(response);
             })
-            .catch(function(response) {
-                //handle error
-                console.log(response);
+            .catch(() => {
+                console.log('LOGIN FAILED');
             });
     };
 
     handleForgetDetailsClick = () => {
-        this.props.handleDialogVisibility('showPhoneNumberDialog', true);
+        this.handleDialogVisibility('showPhoneNumberDialog', true);
         this.handleClose();
     };
 
     handleSignUpClick = () => {
         this.props.history.push('signup');
-        this.handleClose();
+        // this.handleClose();
     };
 
     render() {
@@ -127,116 +123,145 @@ export default class SignIn extends React.Component {
             open,
             inputUserID,
             inputPassword,
-            checkRememberID
+            checkRememberID,
+            showPhoneNumberDialog,
+            showVerifyNumberDialog
         } = this.state;
 
+        console.log('Rendering sign in');
+        // console.log(this.props.userAuthReducer);
+
+        if (this.props.user) {
+            return <Redirect to={`/home`} push />;
+        }
+
         return (
-            <Dialog
-                id="dialog-sign-in"
-                className="dialog"
-                open={open}
-                onClose={this.handleClose}
-                aria-labelledby="form-dialog-title"
-            >
-                <DialogTitle id="form-dialog-title">
-                    Sign In
-                    <span onClick={this.handleClose} className="close-icon">
-                        <CloseSVG />
-                    </span>
-                </DialogTitle>
-                <DialogContent className="dialog-content">
-                    <div className="dialog-content-form">
-                        <div className="form-field">
-                            <div className="content-label">ID</div>
-                            <FormControl fullWidth variant="outlined">
-                                <OutlinedInput
-                                    fullWidth
-                                    type="text"
-                                    value={inputUserID}
-                                    onChange={this.handleTextChange(
-                                        'inputUserID'
-                                    )}
-                                    labelWidth={0}
-                                />
-                            </FormControl>
-                        </div>
-
-                        <div className="form-field margin-top-16">
-                            <div className="content-label">Password</div>
-                            <FormControl fullWidth variant="outlined">
-                                <OutlinedInput
-                                    fullWidth
-                                    type="password"
-                                    value={inputPassword}
-                                    onChange={this.handleTextChange(
-                                        'inputPassword'
-                                    )}
-                                    labelWidth={0}
-                                />
-                                {showError ? (
-                                    <FormHelperText className="password-incorrect-text">
-                                        Password is incorrect
-                                    </FormHelperText>
-                                ) : null}
-                            </FormControl>
-                        </div>
-
-                        <div className="form-field">
-                            <FormControlLabel
-                                control={
-                                    <Checkbox
-                                        checked={checkRememberID}
-                                        onChange={this.handleCheckboxChange(
-                                            'checkRememberID'
+            <div className="sign-in-dialog-container">
+                {showPhoneNumberDialog ? (
+                    <PhoneNumber
+                        handleDialogVisibility={this.handleDialogVisibility}
+                    />
+                ) : null}
+                {showVerifyNumberDialog ? (
+                    <VerifyNumber
+                        handleDialogVisibility={this.handleDialogVisibility}
+                    />
+                ) : null}
+                <Dialog
+                    id="dialog-sign-in"
+                    className="dialog"
+                    open={open}
+                    onClose={this.handleClose}
+                    aria-labelledby="form-dialog-title"
+                >
+                    <DialogTitle id="form-dialog-title">Sign In</DialogTitle>
+                    <DialogContent className="dialog-content">
+                        <div className="dialog-content-form">
+                            <div className="form-field">
+                                <div className="content-label">ID</div>
+                                <FormControl fullWidth variant="outlined">
+                                    <OutlinedInput
+                                        fullWidth
+                                        type="text"
+                                        value={inputUserID}
+                                        onChange={this.handleTextChange(
+                                            'inputUserID'
                                         )}
-                                        value="checkRememberID"
-                                        color="primary"
+                                        labelWidth={0}
                                     />
-                                }
-                                label="Remember ID"
-                            />
-                        </div>
+                                </FormControl>
+                            </div>
 
-                        <div className="form-field">
-                            <Button
-                                className="next-button custom-button-style"
-                                fullWidth
-                                onClick={this.handleNext}
-                                variant="contained"
-                                color="primary"
-                            >
-                                Next
-                            </Button>
-                        </div>
+                            <div className="form-field margin-top-16">
+                                <div className="content-label">Password</div>
+                                <FormControl fullWidth variant="outlined">
+                                    <OutlinedInput
+                                        fullWidth
+                                        type="password"
+                                        value={inputPassword}
+                                        onChange={this.handleTextChange(
+                                            'inputPassword'
+                                        )}
+                                        labelWidth={0}
+                                    />
+                                    {showError ? (
+                                        <FormHelperText className="password-incorrect-text">
+                                            Password is incorrect
+                                        </FormHelperText>
+                                    ) : null}
+                                </FormControl>
+                            </div>
 
-                        <div className="form-field justify-center margin-top-16">
-                            <span className="helper-text">
-                                Forgot your login details?
-                                <span
-                                    onClick={this.handleForgetDetailsClick}
-                                    className="strong cursor-pointer"
+                            <div className="form-field">
+                                <FormControlLabel
+                                    control={
+                                        <Checkbox
+                                            checked={checkRememberID}
+                                            onChange={this.handleCheckboxChange(
+                                                'checkRememberID'
+                                            )}
+                                            value="checkRememberID"
+                                            color="primary"
+                                        />
+                                    }
+                                    label="Remember ID"
+                                />
+                            </div>
+
+                            <div className="form-field">
+                                <Button
+                                    className="next-button custom-button-style"
+                                    fullWidth
+                                    onClick={this.handleLoginClick}
+                                    variant="contained"
+                                    color="primary"
                                 >
-                                    {' '}
-                                    Get help signing in
-                                </span>
-                            </span>
-                        </div>
-                    </div>
-                </DialogContent>
+                                    Next
+                                </Button>
+                            </div>
 
-                <div className="bottom-row">
-                    <span className="helper-text">
-                        Don't have an account?
-                        <span
-                            onClick={this.handleSignUpClick}
-                            className="strong cursor-pointer"
-                        >
-                            {' '}
-                            Sign Up
+                            <div className="form-field justify-center margin-top-16">
+                                <span className="helper-text">
+                                    Forgot your login details?
+                                    <span
+                                        onClick={this.handleForgetDetailsClick}
+                                        className="strong cursor-pointer"
+                                    >
+                                        {' '}
+                                        Get help signing in
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </DialogContent>
+
+                    <div className="bottom-row">
+                        <span className="helper-text">
+                            Don't have an account?
+                            <span
+                                onClick={this.handleSignUpClick}
+                                className="strong cursor-pointer"
+                            >
+                                {' '}
+                                Sign Up
+                            </span>
                         </span>
-                    </span>
-                </div>
-            </Dialog>
+                    </div>
+                </Dialog>
+            </div>
         );
     }
 }
+
+const mapStateToProps = state => ({
+    user: state.userReducer
+});
+
+const mapDispatchToProps = dispatch => ({
+    setUserAuth: user => dispatch(setUserAuth(user))
+});
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(SignIn);
