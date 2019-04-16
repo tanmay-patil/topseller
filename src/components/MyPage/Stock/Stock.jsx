@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import MyPageSideBar from '../MyPageSideBar/MyPageSideBar';
 import SearchSVG from '../../../icons/svg/SearchSVG';
+import FilterSVG from '../../../icons/svg/FilterSVG';
+import DownloadSVG from '../../../icons/svg/DownloadSVG';
 import {
     FormControl,
     InputLabel,
     Select,
     MenuItem,
-    OutlinedInput
+    OutlinedInput,
+    Button
 } from '@material-ui/core';
 import { MY_PAGE_OPTIONS } from '../../../services/types';
 import { Mobile, Desktop } from '../../../services/ScreenSizeDefinitions';
 import './Stock.scss';
+import StockFilter from '../../Dialogs/StockFilter/StockFilter';
 
 const TableRow = () => {
     return (
@@ -33,6 +37,7 @@ const TableRow = () => {
 };
 
 const FirstRow = props => {
+    console.log(props);
     return (
         <div className="first-row">
             <div className="search-bar-container">
@@ -66,6 +71,17 @@ const FirstRow = props => {
                         <MenuItem value={30}>2019-02-14 ~ 2019-03-24</MenuItem>
                     </Select>
                 </FormControl>
+
+                <Button
+                    onClick={() => props.handleFilterVisibility(true)}
+                    className="filter-button"
+                >
+                    <FilterSVG />
+                </Button>
+
+                <Button className="download-button">
+                    <DownloadSVG />
+                </Button>
             </div>
         </div>
     );
@@ -88,17 +104,26 @@ export default class Stock extends Component {
     state = {
         filter: '',
         name: 'hai',
-        labelWidth: 0
+        labelWidth: 0,
+        stockFilterOpen: false
     };
 
     handleChange = name => event => {
         this.setState({ [name]: event.target.value });
     };
 
+    handleFilterVisibility = value => {
+        this.setState({ stockFilterOpen: value });
+    };
+
     render() {
-        const { filter } = this.state;
+        const { filter, stockFilterOpen } = this.state;
         return (
             <div className="my-page-stock-container container">
+                <StockFilter
+                    handleFilterVisibility={this.handleFilterVisibility}
+                    open={stockFilterOpen}
+                />
                 <div className="left-section-container">
                     <MyPageSideBar selected={MY_PAGE_OPTIONS.NOTICE} />
                 </div>
@@ -108,6 +133,7 @@ export default class Stock extends Component {
                         <div className="title">Out of Stocker & Restocked</div>
 
                         <FirstRow
+                            handleFilterVisibility={this.handleFilterVisibility}
                             handleChange={this.handleChange}
                             filter={filter}
                         />
@@ -117,6 +143,7 @@ export default class Stock extends Component {
                 <div className="right-section-container">
                     <Desktop>
                         <FirstRow
+                            handleFilterVisibility={this.handleFilterVisibility}
                             handleChange={this.handleChange}
                             filter={filter}
                         />

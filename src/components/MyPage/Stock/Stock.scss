@@ -2,6 +2,33 @@
     margin-top: 16px;
     margin-bottom: 16px;
 
+    .filter-button {
+        width: 36px;
+        height: 36px;
+        border: solid 1px #9b9b9b;
+        min-width: 0;
+        margin-left: 12px;
+        svg {
+            height: 19px;
+            width: 19px;
+            fill: grey;
+        }
+    }
+
+    .download-button {
+        padding: 0 !important;
+        width: 36px;
+        height: 36px;
+        border: solid 2px #d82929;
+        min-width: 0;
+        margin-left: 12px;
+        svg {
+            height: 26px;
+            width: 26px;
+            fill: #d82929;
+        }
+    }
+
     .right-section-container {
         border: solid 1px #d2d2d2;
         padding-bottom: 32px;
@@ -103,16 +130,8 @@
 
         .dropdown-container {
             div[id='select-filter'] {
-                padding: 10px !important;
+                padding: 9px !important;
                 font-size: 13px;
-            }
-
-            select {
-                padding: 10px !important;
-            }
-
-            #select-filter {
-                padding: 10px !important;
             }
         }
     }
@@ -177,7 +196,7 @@
         .dropdown-container {
             margin-bottom: 16px;
             & > div {
-                width: 100%;
+                width: 70%;
             }
         }
     }
