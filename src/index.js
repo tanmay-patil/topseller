@@ -21,6 +21,7 @@ import SignUpMain from './pages/SignUpMain/SignUpMain';
 import MyPageBuyerNotice from './pages/MyPageBuyerNotice/MyPageBuyerNotice';
 import MyPageResellerNotice from './pages/MyPageResellerNotice/MyPageResellerNotice';
 import MassOrderResellerSteps from './components/MassOrderResellerSteps';
+import MypageResellerProfile from './components/MyPageResellerProfile/ResellerProfile';
 const theme = createMuiTheme({
     palette: {
         primary: {
@@ -71,6 +72,7 @@ ReactDOM.render(
                         component={MyPageResellerNotice}
                     />
 
+                    <Route path="/myPageResellerProfile" component={MypageResellerProfile} />
                     <Route path="/MassOrderResellerSteps" component={MassOrderResellerSteps} />
                 </Switch>
                 <Footer />
