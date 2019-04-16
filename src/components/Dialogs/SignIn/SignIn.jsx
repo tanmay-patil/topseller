@@ -11,6 +11,7 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import { BrowserRouter as Router } from 'react-router-dom';
+import axios from 'axios';
 
 export default class SignIn extends React.Component {
     state = {
@@ -48,6 +49,66 @@ export default class SignIn extends React.Component {
         if (!isValid) {
             this.setState({ showError: true });
         }
+
+        var axiosConfig = {
+            headers: {
+                Authorization:
+                    'Basic ' +
+                    Buffer.from('topseller:topseller').toString('base64'),
+                Accept: 'application/json'
+            }
+        };
+
+        // axios
+        //     .post(
+        //         'http://3.18.163.90/oauth/token',
+        //         {
+        //             grant_type: 'password',
+        //             client_id: 'topseller',
+        //             client_secret: 'topseller',
+        //             username: 'admin@topseller.com',
+        //             password: 'TopSeller1+'
+        //         }
+        //         // axiosConfig
+        //     )
+        //     .then(function(response) {
+        //         console.log(response);
+        //     })
+        //     .catch(function(error) {
+        //         console.log(error);
+        //     });
+
+        let bodyFormData = new FormData();
+        bodyFormData.set('username', 'admin@topseller.com');
+        bodyFormData.set('password', 'TopSeller1+');
+        bodyFormData.set('grant_type', 'password');
+        bodyFormData.set('scope', 'read write');
+
+        axios({
+            method: 'post',
+            url: 'http://3.18.163.90/oauth/token',
+            data: {
+                grant_type: 'password',
+                client_id: 'topseller',
+                client_secret: 'topseller',
+                username: 'admin@topseller.com',
+                password: 'TopSeller1+'
+            },
+            config: {
+                headers: {
+                    Authorization: 'Basic dG9wc2VsbGVyOnRvcHNlbGxlcg==',
+                    Accept: 'application/json'
+                }
+            }
+        })
+            .then(function(response) {
+                //handle success
+                console.log(response);
+            })
+            .catch(function(response) {
+                //handle error
+                console.log(response);
+            });
     };
 
     handleForgetDetailsClick = () => {

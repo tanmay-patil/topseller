@@ -1,4 +1,4 @@
-.my-page-notice-container {
+.my-page-stock-container {
     margin-top: 16px;
     margin-bottom: 16px;
 
@@ -134,7 +134,7 @@
 
 // Mobile
 @media only screen and (max-width: 600px) {
-    .my-page-notice-container {
+    .my-page-stock-container {
         // margin-left: 16px;
         // margin-right: 16px;
         margin-bottom: 16px;
@@ -185,7 +185,7 @@
 
 // Desktop
 @media only screen and (min-width: 600px) {
-    .my-page-notice-container {
+    .my-page-stock-container {
         .left-section-container {
             width: 222px;
         }
@@ -214,7 +214,7 @@
 
         .dropdown-container {
             & > div {
-                width: 146px;
+                width: 202px;
             }
         }
 
@@ -228,7 +228,7 @@
 
 // Custom
 @media only screen and (min-width: 600px) and (max-width: 1128px) {
-    .my-page-notice-container {
+    .my-page-stock-container {
         margin-left: 16px;
         margin-right: 16px;
         margin-bottom: 16px;

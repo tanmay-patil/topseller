@@ -10,16 +10,23 @@ import {
 } from '@material-ui/core';
 import { MY_PAGE_OPTIONS } from '../../../services/types';
 import { Mobile, Desktop } from '../../../services/ScreenSizeDefinitions';
-import './Notice.scss';
+import './Stock.scss';
 
 const TableRow = () => {
     return (
         <tr>
             <td>35</td>
-            <td>Category</td>
+            <td>T1A0001</td>
             <td>Product example Product example Product example</td>
+            <td>Shipping Plan Change</td>
+            <td>No Cash on Delivery</td>
             <td>
-                29/12/2018 <br /> 16:49
+                29/12/2018 <br />
+                16:49
+            </td>
+            <td>
+                29/12/2018 <br />
+                16:49
             </td>
         </tr>
     );
@@ -54,9 +61,9 @@ const FirstRow = props => {
                         <MenuItem value="">
                             <em>None</em>
                         </MenuItem>
-                        <MenuItem value={10}>Dummy 1</MenuItem>
-                        <MenuItem value={20}>Dummy 2</MenuItem>
-                        <MenuItem value={30}>Dummy 3</MenuItem>
+                        <MenuItem value={10}>2019-02-14 ~ 2019-03-24</MenuItem>
+                        <MenuItem value={20}>2019-02-14 ~ 2019-03-24</MenuItem>
+                        <MenuItem value={30}>2019-02-14 ~ 2019-03-24</MenuItem>
                     </Select>
                 </FormControl>
             </div>
@@ -77,7 +84,7 @@ const PaginationContainer = () => {
     );
 };
 
-export default class Notice extends Component {
+export default class Stock extends Component {
     state = {
         filter: '',
         name: 'hai',
@@ -91,14 +98,14 @@ export default class Notice extends Component {
     render() {
         const { filter } = this.state;
         return (
-            <div className="my-page-notice-container container">
+            <div className="my-page-stock-container container">
                 <div className="left-section-container">
                     <MyPageSideBar selected={MY_PAGE_OPTIONS.NOTICE} />
                 </div>
 
                 <Mobile>
                     <div className="top-section-container">
-                        <div className="title">Notice</div>
+                        <div className="title">Out of Stocker & Restocked</div>
 
                         <FirstRow
                             handleChange={this.handleChange}
@@ -121,9 +128,12 @@ export default class Notice extends Component {
                                 <thead>
                                     <tr>
                                         <td>No</td>
-                                        <td>Type</td>
-                                        <td>Subject Title</td>
+                                        <td>Order Status</td>
+                                        <td>Product Name</td>
+                                        <td>Status</td>
+                                        <td>Change Preview</td>
                                         <td>Date of Upload</td>
+                                        <td>Date of Change</td>
                                     </tr>
                                 </thead>
                                 <tbody>

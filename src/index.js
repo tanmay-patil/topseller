@@ -22,6 +22,8 @@ import MyPageBuyerNotice from './pages/MyPageBuyerNotice/MyPageBuyerNotice';
 import MyPageResellerNotice from './pages/MyPageResellerNotice/MyPageResellerNotice';
 import MassOrderResellerSteps from './components/MassOrderResellerSteps';
 import MypageResellerProfile from './components/MyPageResellerProfile/ResellerProfile';
+import MyPageResellerStock from './pages/MyPageResellerStock/MyPageResellerStock';
+
 const theme = createMuiTheme({
     palette: {
         primary: {
@@ -66,14 +68,28 @@ ReactDOM.render(
                         path="/mypagebuyernotice"
                         component={MyPageBuyerNotice}
                     />
+
                     <Route
                         exact
                         path="/mypageresellernotice"
                         component={MyPageResellerNotice}
                     />
 
-                    <Route path="/myPageResellerProfile" component={MypageResellerProfile} />
-                    <Route path="/MassOrderResellerSteps" component={MassOrderResellerSteps} />
+                    <Route
+                        exact
+                        path="/mypageresellerstock"
+                        component={MyPageResellerStock}
+                    />
+
+                    <Route
+                        path="/myPageResellerProfile"
+                        component={MypageResellerProfile}
+                    />
+
+                    <Route
+                        path="/MassOrderResellerSteps"
+                        component={MassOrderResellerSteps}
+                    />
                 </Switch>
                 <Footer />
             </ConnectedRouter>
